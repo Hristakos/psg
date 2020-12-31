@@ -1,0 +1,30 @@
+.slider-image {
+    height: 50vh;
+    width: 100%;
+    object-fit: contain;
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+.carousel-dots li button:before {
+    color: white;
+}
+.carousel-dots li.carousel-dots-active button:before {
+color: white;
+}
+@media screen and (max-width: 800px) {
+    .slider {
+        /* width: 70%;
+        margin-left: 15%; */
+    }
+}
