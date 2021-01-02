@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomSlider from './components/CustomSlider';
 
-function OurStory() {
+function Home() {
     return (
         <div className="slider-container">
             <CustomSlider />
@@ -9,4 +9,4 @@ function OurStory() {
     )
 }
 
-export default OurStory;
+export default Home;

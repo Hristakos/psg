@@ -1,0 +1,115 @@
+.features-outline {
+    position: relative;
+    top: 5vh;
+    width: 90%;
+    height: 90vh;
+    /* border: 1px solid white; */
+    grid-template-columns:repeat(auto-fit, minmax(420px, 1fr));
+  /* grid-template-rows: 1fr;    */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10vh;
+}
+
+
+.feature-box {
+    display: flex;
+    background-color: black;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border: white 1px solid; */
+   
+}
+
+.feature-image-container {
+    width: 33.33333%;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-text-container {
+    display: grid;
+    flex-direction: column;
+    width: 66.66666%;
+    height: 100%;
+    /* background-color: black; */
+    align-items: center;
+    justify-content: space-between;
+}
+.feature-image {
+
+    width: 50%;
+    height: 50%;
+  
+}
+.feature-heading {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 20%;
+    width: 98%;
+    text-align: left;
+    /* background-color: blueviolet; */
+}
+
+.feature-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 90%;
+    width: 98%;
+    text-align: left;
+    /* background-color: cyan; */
+
+}
+
+@media screen and (max-width: 1044px) {
+    .feature-box {
+        flex-direction: column;
+        height: 50vh;
+    ;
+    }
+
+    .feature-heading {
+        justify-content: center;
+    }
+    .feature-detail {
+        justify-content: center;
+    }
+.features-outline {
+     grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+}
+.feature-image-container {
+    height: 50%;
+}
+}
+
+@media screen and (max-width: 550px) {
+    .feature-box {
+        height: 55vh;
+    }
+
+    .features-outline {
+     grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+}
+
+}
+
+@media screen and (max-width: 360px) {
+    .feature-detail {
+    font-size: 11.5px;
+}
+}
+
+
+
+

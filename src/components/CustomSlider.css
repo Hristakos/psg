@@ -1,5 +1,5 @@
 .slider-image {
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     object-fit: contain;
 }
@@ -7,14 +7,16 @@
     width: 100%;
     height: 100%;
     position: sticky;
+
 }
 
 .slider-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 100%;
+    height: 70vh;
+    width: 90%;
+
 }
 .carousel-dots li button:before {
     color: white;

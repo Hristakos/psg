@@ -40,10 +40,6 @@
 .container {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-
 
 }
 section {
@@ -58,7 +54,113 @@ section {
   background-image: url("./background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: rgba(1,1 ,1,.75);
   color: white;
 }
+
+.our-story {
+height: 200vh;
+width: 100%;
+}
+
+.our-story-section {
+  /* padding-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  text-align: center;
+  width: 100%;
+  height: 100vh; 
+  scroll-snap-align: center;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(1,1 ,1,.75);
+  color: white;
+
+}
+
+.our-story-section-2 {
+  /* padding-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  text-align: center;
+  width: 100%;
+  height: 100vh; 
+  scroll-snap-align: center;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(1,1 ,1,.75);
+  color: white;
+
+}
+
+.our-story-features {
+  /* padding-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  text-align: center;
+  width: 100%;
+  height: 50%; 
+  scroll-snap-align: center;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(1,1 ,1,.75);
+  color: white;
+
+}
+
+
+nav {
+  width: 80%;
+
+
+}
+
+@media screen and (max-width: 1044px) {
+  .our-story {
+    height: 280vh;
+     width: 100%;
+  }
+    .our-story-section-2 {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .our-story {
+    height: 460vh;
+     width: 100%;
+  }
+    .our-story-section-2 {
+    height: 360vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  .our-story {
+    height: 540vh;
+     width: 100%;
+  }
+  .our-story-section {
+    height: 150vh;
+  }
+
+      .our-story-section-2 {
+    height: 390vh;
+  }
+
+
+}
+
 

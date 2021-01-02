@@ -3,7 +3,7 @@ import React from 'react';
 function OurRange() {
     return (
         <div>
-            our Range
+            <h1>our Range</h1>
         </div>
     )
 }

@@ -29,6 +29,8 @@ export default class CustomSlider extends Component {
                         <img className="slider-image" src="../assets/pic8.png" alt="pic8.png" />
                     </div>
                 </Slider>
+
+                <h1 style={{ color: "white", marginTop: "20px" }}>Tage line here!</h1>
             </div>
         );
     }

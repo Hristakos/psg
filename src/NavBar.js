@@ -7,8 +7,9 @@ function NavBar() {
     return (
         // <div>
         <nav className="navbar">
-            <img className="logo" src="modulive.png" />
+            <a href="#home"><img className="logo" src="modulive.png" /></a>
             <ul>
+
                 <a href="#ourstory"><li>Story</li></a>
                 <a href="#ourrange"><li>Range</li></a>
                 <a href="#projects"><li>Projects</li></a>
