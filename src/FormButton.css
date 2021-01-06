@@ -1,0 +1,7 @@
+.button-wrapper {
+    width: 100%;
+    min-width: 260px;
+    max-width: 550px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

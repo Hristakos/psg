@@ -9,6 +9,15 @@ import Home from './Home';
 import Difference from './Difference';
 import Features from './Features';
 
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import ContactUs from './ContactUs';
+
+// Need to do this here to load the icons
+library.add(fab, fas);
+
 function App() {
   return (
     <div className="container">
@@ -18,9 +27,9 @@ function App() {
       </nav>
 
 
-      <section id="home">
+      <div className="home" id="home">
         <Home />
-      </section>
+      </div>
       <div className="our-story" id="ourstory">
         <div className="our-story-section">
           <Difference />
@@ -29,15 +38,16 @@ function App() {
           <Features />
         </div>
       </div>
-      <section id="ourrange">
+      <div className="range" id="ourrange">
         <OurRange />
-      </section>
-      <section id="projects">
+      </div>
+      <div className="projects" id="projects">
         <Projects />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
+      </div>
+      <div className="contact" id="contact">
+        {/* <Contact /> */}
+        <ContactUs />
+      </div>
 
 
 

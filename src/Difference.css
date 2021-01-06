@@ -1,17 +1,44 @@
 
 .difference-wrapper {
-    width: 90%;
-    top: 100px;
+    display: flex;
+    flex-direction: column;
     position: relative;
-}
-.difference-outline {
-    position:relative;
-    top: 100px;
-    color: white;
-    border: white solid 1px;
-    height: 70vh;
     width: 90%;
+    height: 90vh;
+    top: 15vh;
+    gap: 10vh;
+    /* background-color: blueviolet; */
+    
+
 }
+.difference-outline-small {
+    position: relative;
+    /* top: 5vh; */
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid white; */
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+  /* grid-template-rows: 1fr;    */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+.difference-outline-large {
+    /* background-color: blueviolet; */
+    position: relative;
+    /* top: 5vh; */
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid white; */
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+  /* grid-template-rows: 1fr;    */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+
 .half-screen-top {
     display: flex;
     width: 100%;
@@ -44,14 +71,26 @@
     background-color: black;
     opacity: .7;
 }
-.difference-container {
+.difference-container-small {
     height: 100%;
     width: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgb(52, 85, 69);
+    /* opacity: .7; */
     /* background-color: violet; */
+}
+.difference-container-large {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* opacity: .7; */
+    background-color: rgb(52, 85, 69);;
 }
 .difference-icon {
     display: flex;
@@ -72,12 +111,27 @@
     display: flex;
     width: 100%;
     height: 20%;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    color: white;
 
     /* background-color: brown;  */
 
+}
+.difference-page-heading{
+  display: flex;
+  position: relative;
+  /* top: 1vh; */
+  align-items: center;
+  justify-content: center;
+  color: rgb(52, 85, 69);
+   font-family: 'Red Hat Display', sans-serif;
+  /* background-color: black; */
+  /* height: 100%; */
+  font-size: 36px;
+  font-weight: bold;
 }
 .difference-heading p {
     display: flex;
@@ -91,69 +145,63 @@
     width: 80%;
     text-align: center;
     font-size: 16px;
+     font-family: 'Red Hat Display', sans-serif;
     /* background-color: turquoise; */
     height: 30%;
     align-items: center;
+    color: white;
     /* background-color: crimson; */
 }
 
 
-@media screen and (max-width: 550px) {
-
-    .half-screen-top {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-
-
+@media screen and (max-width: 850px) and (orientation: portrait) {
+  .difference-outline-small {
+    height: 80vh;
 }
-    .half-screen-bottom {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-
-
+  .difference-outline-large {
+    height: 50vh;
 }
-    .difference-outline {
-        border: none;
+}
 
+
+@media screen and (max-width: 550px)and (orientation: portrait)  {
+    .difference-wrapper {
+        height: 250vh;
     }
-    .bottom-box {
-    /* background-color: tomato; */
-    height: 75%;
-    width: 100%;
-    border: none;
-    border: white solid 1px;
-    background-color: black;
-    opacity: .7;
-}
-.left-top-box {
-    height: 66%;
-    border: none;
-    border: white 1px solid;
 
-}
-.right-top-box {
-    border: none;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    height: 66%;
-}
-.difference-detail {
-    display: flex;
-    width: 90%;
-    text-align: center;
-    font-size: 12px;
-    /* background-color: turquoise; */
-    height: 30%;
-    align-items: center;
-    /* background-color: crimson; */
+    .difference-outline-small {
+         height: 160vh;
+    
+    }
+
+    .difference-outline-large, .difference-outline-small {
+         grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+         /* height: 100%; */
+    }
+    .difference-outline-large {
+        height: 105vh;
+    }
+
+  
 }
 
-}
-
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 360px) and (orientation: portrait)  {
     .difference-detail {
-        font-size: 11px;
+        /* font-size: 11.5px; */
     }
+}
+
+@media screen and (min-width: 270px) and (max-width: 1023px) and (orientation: landscape) {
+
+.difference-page-heading {
+    color: turquoise;
+}
+.difference-wrapper {
+    height: 120vw;
+}
+
+.difference-outline-small {
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
 }

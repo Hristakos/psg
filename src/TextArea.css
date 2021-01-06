@@ -1,0 +1,40 @@
+.text-area {
+    /* min-width: 260px; */
+    max-width: 550px;
+    width: 90%;
+    margin: 0 5%;
+    outline: none;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    background-color: white;
+    box-shadow: 1px 1px 1px  #2e3830;
+
+   
+}
+
+@media screen and (max-width: 600px) {
+
+    .text-area{
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .text-area{
+        max-width: 260px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .text-area{
+        display: flex;
+        max-width: 240px;
+        /* align-self:flex-start;    */
+        /* background-color: violet; */
+    }
+
+}

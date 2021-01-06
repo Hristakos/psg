@@ -30,7 +30,8 @@ export default class CustomSlider extends Component {
                     </div>
                 </Slider>
 
-                <h1 style={{ color: "white", marginTop: "20px" }}>Tage line here!</h1>
+
+
             </div>
         );
     }

@@ -1,0 +1,34 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5%;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+}
+.tag-line {
+    position: relative;
+    display: flex;
+    color: #345545;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+    height: 10vh;
+    width: 50%;
+    font-size: 24px;
+    top: -10vh;
+
+}
+
+@media screen and (max-width: 750px) {
+    .tag-line { 
+        font-size: 18px;
+    }   
+}
+
+@media screen and (max-width: 550px) {
+    .tag-line { 
+        width: 70%;
+    }   
+}

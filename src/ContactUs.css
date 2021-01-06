@@ -1,0 +1,74 @@
+
+.contact-us-wrapper {
+    display: flex;
+    position: relative;
+    top: 10vh;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    opacity: .85;
+    height: 80vh;
+    min-width: 260px;
+        
+ 
+
+}
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 260px;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    max-width: 550px;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+}
+
+.center-email-status {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-us{
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .contact-us{
+        max-width: 260px;
+    }
+
+    .contact-us-wrapper {
+        min-width: 270px;
+        /* height: 85vh */
+    }
+}
+@media screen and (max-width: 360px) {
+
+
+    .contact-us-wrapper {
+        height: 100vh;  
+    }
+
+    .contact-us {
+        justify-content: flex-start;
+    }
+}
+
+
+
