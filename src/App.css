@@ -124,7 +124,7 @@ section {
   color: white;
 }
 .our-story {
-height: 320vh;
+height: 325vh;
 width: 100%;
 }
 
@@ -136,7 +136,7 @@ width: 100%;
   justify-content:flex-start;
   text-align: center;
   width: 100%;
-  height: 110vh; 
+  height: 115vh; 
   scroll-snap-align: center;
   background-image: url("./aboutpagebackground.png");
   background-repeat: no-repeat;
@@ -231,17 +231,17 @@ nav {
 
 @media screen and (max-width: 700px) and (orientation: portrait) {
   .our-story {
-    height: 590vh;
+    height: 610vh;
      width: 100%;
   }
   .our-story-section-2 {
-    height: 510vh;
+    height: 530vh;
   }
 }
 
 @media screen and (max-width: 550px) and (orientation: portrait) {
   .our-story {
-    height: 735vh;
+    height: 855vh;
      width: 100%;
   }
   .our-story-section {
@@ -249,7 +249,7 @@ nav {
   }
 
   .our-story-section-2 {
-    height: 415vh;
+    height: 535vh;
   }
 
 
@@ -275,31 +275,45 @@ nav {
 }
 
 
-@media screen and (min-width: 270px) and (max-width: 1023px) and (orientation: landscape) {
-.our-story {
-width: 100%;
-height:  370vw;
+
+
+@media screen and (max-width:850px)  and (orientation: landscape) {
+  .our-story {
+    height: 490vw;
+  }
+
+  .our-story-section {
+    height: 200vw;
+  }
+
+  .our-story-section-2 {
+    height: 290vw;
+  }
 }
 
-.our-story-section {
-  height: 150vw;
-}
-.our-story-section-2 {
-  height: 220vw;
-}
-  
-}
-@media screen and (min-width: 270px) and (max-width: 754px) and (orientation: landscape) {
-/* .our-story {
-width: 100%;
-height:  0vw;
+@media screen and (max-width:600px)  and (orientation: landscape) {
+  .our-story {
+    height: 720vw;
+  }
+
+  .our-story-section {
+    height: 250vw;
+  }
+    .our-story-section-2 {
+    height: 470vw;
+  }
 }
 
-.our-story-section {
-  height: 150vw;
-}
-.our-story-section-2 {
-  height: 270vw;
-} */
-  
+@media screen and (max-width:500px)  and (orientation: landscape) {
+  .our-story {
+    height: 800vw;
+  }
+
+  .our-story-section {
+    height: 300vw;
+  }
+    .our-story-section-2 {
+    height: 500vw;
+  }
+
 }

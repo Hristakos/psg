@@ -37,28 +37,30 @@ const Differencelarge = ({ image, heading, detail }) => {
 
 function Difference() {
     return (
-        <div className="difference-wrapper">
+        <>
             <div className="difference-page-heading">So, what makes us different? </div>
-            <div className="difference-outline-small">
+            <div className="difference-wrapper">
 
-                <DifferenceSmall
-                    image="tools.svg"
-                    heading="No concrete, digging or stumping."
-                    detail="Our unique foundation system is comprised of a engineered insulated panel floor system which achieves a 7+ energy star rating and high BAL and cyclone ratings" />
-                <DifferenceSmall
-                    image="maintenance.svg"
-                    heading="Little to no maintenance."
-                    detail="Customised wall, floor roof and floor panels engineered to Australian design and standards are fully insulated meaning no plasterboards, paint, cornices, tiles, brick work, render" />
-            </div>
-            <div className="difference-outline-large">
-                <Differencelarge
-                    image="time.svg"
-                    heading="45-day build time"
-                    detail="Our flat-pack home turns traditional building on its head with no studs, joists, bearers, digging or excavation required, the flat-pack home can be built anywhere within 45-days with materials delivered direct to site. Our unique roof, wall and floor panels mean fast installation with no expensive trades needed for plastering, painters tilers, brick layers, renders.
+                <div className="difference-outline-small">
+
+                    <DifferenceSmall
+                        image="tools.svg"
+                        heading="No concrete, digging or stumping."
+                        detail="Our unique foundation system is comprised of a engineered insulated panel floor system which achieves a 7+ energy star rating and high BAL and cyclone ratings" />
+                    <DifferenceSmall
+                        image="maintenance.svg"
+                        heading="Little to no maintenance."
+                        detail="Customised wall, floor roof and floor panels engineered to Australian design and standards are fully insulated meaning no plasterboards, paint, cornices, tiles, brick work, render" />
+                </div>
+                <div className="difference-outline-large">
+                    <Differencelarge
+                        image="time.svg"
+                        heading="45-day build time"
+                        detail="Our flat-pack home turns traditional building on its head with no studs, joists, bearers, digging or excavation required, the flat-pack home can be built anywhere within 45-days with materials delivered direct to site. Our unique roof, wall and floor panels mean fast installation with no expensive trades needed for plastering, painters tilers, brick layers, renders.
          Mininimal number of trades personal required." />
+                </div>
             </div>
-        </div>
-
+        </>
         //         <div className="difference-outline">
         //             <div className="half-screen-top">
         //                 <div className="left-top-box">

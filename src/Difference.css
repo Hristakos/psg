@@ -72,7 +72,7 @@
     opacity: .7;
 }
 .difference-container-small {
-    height: 100%;
+    height: 90%;
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -123,10 +123,10 @@
 .difference-page-heading{
   display: flex;
   position: relative;
-  /* top: 1vh; */
+  top: 16vh;
   align-items: center;
   justify-content: center;
-  color: rgb(52, 85, 69);
+  color: white;
    font-family: 'Red Hat Display', sans-serif;
   /* background-color: black; */
   /* height: 100%; */
@@ -191,17 +191,49 @@
     }
 }
 
-@media screen and (min-width: 270px) and (max-width: 1023px) and (orientation: landscape) {
 
-.difference-page-heading {
-    color: turquoise;
-}
-.difference-wrapper {
-    height: 120vw;
+@media screen and (max-width:850px)  and (orientation: landscape) {
+    .difference-page-heading {
+        color: red;
+    }
+
+    .difference-wrapper {
+        height: 160vw;
+    }
 }
 
-.difference-outline-small {
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+@media screen and (max-width:600px)  and (orientation: landscape) {
+    .difference-page-heading {
+        /* color: red; */
+    }
+
+    .difference-wrapper {
+        height: 210vw;
+    }
+
+        .difference-page-heading {
+        /* color: blue; */
+    }
 }
+
+@media screen and (max-width:500px)  and (orientation: landscape) {
+    .difference-page-heading {
+        /* color: yellow; */
+    }
+
+    .difference-wrapper {
+        height: 260vw;
+    }
+
+}
+
+@media screen and (max-width:450px)  and (orientation: landscape) {
+    .difference-page-heading {
+        /* color: tomato; */
+    }
+
+    .difference-wrapper {
+        height: 310vw;
+    }
 
 }
