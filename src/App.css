@@ -78,17 +78,17 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   width: 100%;
-  height: 100vh; 
+  height: 125vh; 
   scroll-snap-align: center;
-  background-image: url("./background.png");
+  background-image: url("./rangebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(1,1 ,1,.75);
-  color: white;
+  /* background-color: rgba(1,1 ,1,.75); */
+  /* color: white; */
 }
 .projects {
   display: flex;
@@ -103,8 +103,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-color: rgba(1,1 ,1,.75); */
-  background-color: red;
+  background-color: rgb(52,85,69);
   color: white;
 }
 .contact {
@@ -114,13 +113,13 @@ section {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 110vh; 
+  height: 100vh; 
   scroll-snap-align: center;
-  background-image: url("./background.png");
+ background-image: url("./homebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(1,1 ,1,.75);
+  background-color: rgb(52,85,69);
   color: white;
 }
 .our-story {
@@ -231,7 +230,7 @@ nav {
 
 @media screen and (max-width: 700px) and (orientation: portrait) {
   .our-story {
-    height: 610vh;
+    height: 710vh;
      width: 100%;
   }
   .our-story-section-2 {
@@ -316,4 +315,17 @@ nav {
     height: 500vw;
   }
 
+}
+
+@media screen and (max-width: 1130px) {
+ .range {
+    height: 240vh;
+
+ }
+}
+@media screen and (max-width: 550px) {
+ .range {
+    height: 400vh;
+
+ }
 }

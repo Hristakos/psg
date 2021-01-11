@@ -5,7 +5,7 @@
     border: 1px solid  #2e3830;
     /* margin-top: 10px;
     margin-bottom: 10px; */
-    box-shadow: 1px 1px 1px  #2e3830;
+    box-shadow: 1px 1px 1px   rgb(52, 85, 69);;
     /* min-width: 260px; */
     max-width: 550px;
     width: 90%;
@@ -79,7 +79,8 @@
     align-items: center;
     justify-content: center;
     align-self: center;
-    background-color: black;
+    /* background-color: black; */
+    background-color: rgb(52, 85, 69);
     height: 100%;
     width: 100%;
 }

@@ -1,0 +1,200 @@
+.contact-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 70vh;
+    margin: 0 5%;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    background-image: url("./contact.png");
+    background-position: center;
+      background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-form-container {
+    /* position: relative;
+    top: 5vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+    width: 50%;
+    /* margin-top: 5%; */
+    margin: 5% 25%;
+
+    background-color: rgb(52,85,69);
+  
+
+}
+
+.contact-form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    gap: 5%;
+    /* background-color: tomato; */
+    
+}
+
+.contact-names {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    gap: 5%;
+
+}
+.contact-email {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    gap: 5%;
+
+}
+
+.contact-number-company {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    gap: 5%;
+
+}
+
+.contact-send {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 15%;
+}
+
+.contact-send button {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(176 ,191, 184);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-size: 26px;
+    font-family: 'Red Hat Display', sans-serif;
+    outline: none;
+}
+
+.contact-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 10%
+    /* background-color: turquoise; */
+}
+.contact-input-label {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 10%;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.contact-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    /* background-color: yellowgreen; */
+}
+.contact-input input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 1px 2px;
+
+}
+
+.contact-input-error {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 10%;
+    text-align: left;
+/* background-color: red; */
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Red Hat Display', sans-serif;
+    color: red;
+}
+
+.contact-message {
+    width: 100%;
+    height: 40%;
+}
+.contact-text-area-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 2.5%;
+    /* background-color: turquoise; */
+}
+
+.contact-text-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+   
+    /* background-color: yellowgreen; */
+}
+
+.contact-text-area textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 2px;
+    text-transform: capitalize;
+}
+
+.contact-text-area-error {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Red Hat Display', sans-serif;
+    color: red;
+/* background-color: red; */
+}
+
+input {
+    text-transform: capitalize;
+}
+
+.contact-email input {
+    text-transform: lowercase;
+}

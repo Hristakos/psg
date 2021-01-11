@@ -13,7 +13,7 @@ import Features from './Features';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import ContactUs from './ContactUs';
+
 
 // Need to do this here to load the icons
 library.add(fab, fas);
@@ -46,7 +46,7 @@ function App() {
       </div>
       <div className="contact" id="contact">
         {/* <Contact /> */}
-        <ContactUs />
+        <Contact />
       </div>
 
 

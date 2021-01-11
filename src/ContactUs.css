@@ -6,7 +6,8 @@
     width: 90%;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
+     background-color: rgb(176 ,191, 184);
     opacity: .85;
     height: 80vh;
     min-width: 260px;

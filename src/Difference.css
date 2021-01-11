@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: space-evenly;
     /* opacity: .7; */
-    background-color: rgb(52, 85, 69);;
+    background-color: rgb(52, 85, 69);
 }
 .difference-icon {
     display: flex;
@@ -194,7 +194,7 @@
 
 @media screen and (max-width:850px)  and (orientation: landscape) {
     .difference-page-heading {
-        color: red;
+        /* color: red; */
     }
 
     .difference-wrapper {
