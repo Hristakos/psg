@@ -160,11 +160,17 @@ function Contact() {
         init("user_j1ADGdHX72eDEfCx1jLGC");
     }, [])
     return (
-        <div className="contact-page-container">
-            <div className="contact-form-container">
-                <Form />
+        <>
+            <div className="contact-page-heading">
+                Get in touch.
             </div>
-        </div>
+            <div className="contact-page-container">
+
+                <div className="contact-form-container">
+                    <Form />
+                </div>
+            </div>
+        </>
     )
 }
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 70vh;
+    height: 70%;
     margin: 0 5%;
     align-items: center;
     position: relative;
@@ -11,6 +11,7 @@
     background-position: center;
       background-repeat: no-repeat;
   background-size: cover;
+  min-width: 300px;
 }
 
 .contact-form-container {
@@ -24,8 +25,10 @@
     width: 50%;
     /* margin-top: 5%; */
     margin: 5% 25%;
-
-    background-color: rgb(52,85,69);
+    min-width: 270px;
+    /* background-color: tomato; */
+     background-color: rgb(52,85,69);
+   
   
 
 }
@@ -37,9 +40,9 @@
     justify-content: space-evenly;
     width: 90%;
     height: 90%;
-    margin: 5%;
-    gap: 5%;
-    /* background-color: tomato; */
+    margin: 2vh;
+    gap: 1vh;
+
     
 }
 
@@ -48,7 +51,7 @@
     align-items: center;
     width: 100%;
     height: 15%;
-    gap: 5%;
+    gap: 1vh;
 
 }
 .contact-email {
@@ -56,7 +59,7 @@
     align-items: center;
     width: 100%;
     height: 15%;
-    gap: 5%;
+    gap: 1vh;
 
 }
 
@@ -65,15 +68,15 @@
     align-items: center;
     width: 100%;
     height: 15%;
-    gap: 5%;
+    gap: 1vh;
 
 }
 
 .contact-send {
     display: flex;
     align-items: center;
-    width: 20%;
-    height: 15%;
+    width: 40%;
+    height: 10%;
 }
 
 .contact-send button {
@@ -96,27 +99,30 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    gap: 10%
+    gap: 5px;
+    margin: 1vw;
     /* background-color: turquoise; */
 }
 .contact-input-label {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    height: 10%;
+    height: 20%;
     width: 100%;
     text-align: left;
     font-size: 12px;
     font-style: italic;
     font-family: 'Red Hat Display', sans-serif;
+    /* background-color: burlywood; */
 }
 .contact-input {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60%;
-    /* background-color: yellowgreen; */
+    height: 40%;
+
+    
 }
 .contact-input input {
     height: 100%;
@@ -126,6 +132,7 @@
     border: none;
     font-family: 'Red Hat Display', sans-serif;
     padding: 1px 2px;
+    /* background-color: yellowgreen; */
 
 }
 
@@ -134,13 +141,14 @@
     align-items: center;
     /* justify-content: center; */
     width: 100%;
-    height: 10%;
+    height: 20%;
     text-align: left;
 /* background-color: red; */
-    font-size: 16px;
+    font-size: 12px;
     font-style: italic;
     font-family: 'Red Hat Display', sans-serif;
     color: red;
+    /* background-color: chocolate; */
 }
 
 .contact-message {
@@ -154,7 +162,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    gap: 2.5%;
+    gap: 1vh;
     /* background-color: turquoise; */
 }
 
@@ -184,7 +192,7 @@
     /* justify-content: center; */
     width: 100%;
     height: 20%;
-    font-size: 16px;
+    font-size: 12px;
     font-style: italic;
     font-family: 'Red Hat Display', sans-serif;
     color: red;
@@ -198,3 +206,63 @@ input {
 .contact-email input {
     text-transform: lowercase;
 }
+
+.contact-page-heading{
+  display: flex;
+  position: relative;
+  top: 5vh;
+  /* height: 15vh; */
+  align-items: center;
+  justify-content: center;
+  color: white;
+     font-family: 'Red Hat Display', sans-serif;
+  /* background-color: black; */
+  /* height: 100%; */
+  font-size: 36px;
+  font-weight: bold;
+}
+@media screen and (max-width:800px) and (orientation:portrait) {
+.contact-form-container {
+    /* background-color: blueviolet; */
+}
+.contact-names, .contact-number-company { 
+    flex-direction: column;
+    /* gap: 1%; */
+    height: 20%;
+    /* gap: 1%; */
+}
+.contact-email, .contact-send {
+    height: 10%;
+    /* gap: 1%; */
+}
+.contact-form {
+    /* gap: 1%; */
+}
+
+.contact {
+    height: 175vh;
+}
+.contact-page-container {
+    top: -5vh;
+}
+
+.contact-message {
+    height: 20%;
+}
+
+.contact-page-heading {
+    top: -5vh;
+}
+}
+
+@media screen and (max-width:850px)  and (orientation: landscape) {
+.contact {
+    height: 100vw;
+}
+.contact-form-container {
+    /* background-color: cyan; */
+  
+    width: 75vw;
+}
+}
+

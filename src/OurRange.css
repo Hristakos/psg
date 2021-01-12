@@ -111,11 +111,12 @@
     margin: 0 5%;
     border: 1px solid white;
     border-radius: 30px;
+    
 
 }
 
 .range-link a {
-
+    width: 90%;
     text-decoration: none;
     color: white;
     font-family: 'Red Hat Display', sans-serif;
