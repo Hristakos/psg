@@ -213,7 +213,11 @@ nav {
   }
 } */
 
+@media screen and (max-width: 1130px) {
+ .range {
+    height: 240vh;
 
+ }
 
 @media screen and (max-width: 850px) and (orientation: portrait) {
   .our-story {
@@ -250,6 +254,12 @@ nav {
   .our-story-section-2 {
     height: 535vh;
   }
+ .range {
+    height: 400vh;
+
+ }
+
+}
 
 
 }
@@ -317,15 +327,7 @@ nav {
 
 }
 
-@media screen and (max-width: 1130px) {
- .range {
-    height: 240vh;
 
- }
-}
 @media screen and (max-width: 550px) {
- .range {
-    height: 400vh;
 
- }
 }

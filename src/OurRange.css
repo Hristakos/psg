@@ -1,8 +1,9 @@
 .range-page-container {
-    display: grid;
+  display: grid;
   grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
   height: 80%;
   width: 90%;
+ 
 }
 .range-page-heading{
   display: flex;
@@ -26,6 +27,7 @@
     width: 100%;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     gap: 0;
+     
 }
 
 .range-container {
@@ -34,6 +36,7 @@
     align-items: center;
     justify-content: space-between;
     height: 80vh;
+    
     /* width: 20vw; */
 }
 .range-title {
@@ -55,12 +58,14 @@
     /* background-color: blanchedalmond; */
     height: 90%;
     width: 90%;
+    background-color:  rgb(52,85,69);
 }
 
 .range-price {
     display: flex;
     height: 100%;
     width: 90%;
+    margin: 0 5%;
     align-items: center;
     justify-content: center;
     font-family: 'Red Hat Display', sans-serif;
@@ -122,8 +127,38 @@
 .range-link-text {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
 }
+
+@media screen and (max-width: 1130px) {
+    .range-outline {
+        grid-template-rows: 1fr 2fr 7fr 1.5fr;
+
+    }
+
+    
+}
+
+@media screen and (max-width: 1130px) {
+    .range-container {
+        height: 90vh;
+    }
+
+    
+}
+
+@media screen and (max-width:850px)  and (orientation: landscape) {
+
+.range-container{ 
+    /* background-color: blueviolet; */
+    height: 120vw;
+}
+.range {
+    height: 275vw;
+}
+}
+
 
 
 
