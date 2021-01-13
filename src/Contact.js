@@ -155,7 +155,7 @@ const Form = ({ handleSendingEmail }) => {
                                 />
                             </div>
                             <div className="contact-send">
-                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={handleChange("recaptureResponse")}></div>
+                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={(token) => console.log("token = " + token)}></div>
                                 <button type="submit" onClick={handleSubmit}>send</button>
                                 {errors.recaptureResponse}
                             </div>
