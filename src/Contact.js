@@ -85,14 +85,12 @@ const Form = ({ handleSendingEmail }) => {
         }
 
     }
-    const handleRecaptureResponse = (token) => {
-        recaptureResponse = token;
-    }
+
     return (
         <div className="contact-form">
             {sendingEmail === false && emailSent === null ?
                 <Formik
-                    initialValues={{ contactFirstName: "", contactLastName: "", contactEmail: "", contactPhone: "", contactCompany: "", contactMessage: "", recaptureResponse="" }}
+                    initialValues={{ contactFirstName: "", contactLastName: "", contactEmail: "", contactPhone: "", contactCompany: "", contactMessage: "", recaptureResponse: "" }}
                     onSubmit={async (fields, { setFieldError }) => {
                         setSendingEmail(true)
                         sendEmail("template_7riie8i", {
