@@ -81,6 +81,9 @@ const Form = ({ handleSendingEmail }) => {
         }
 
     }
+    const handleRecaptureResponse = (token) => {
+        console.log("response = " + token)
+    }
     return (
         <div className="contact-form">
             {sendingEmail === false && emailSent === null ?
@@ -151,7 +154,7 @@ const Form = ({ handleSendingEmail }) => {
                             <div className="contact-send">
 
                                 <button type="submit" onClick={handleSubmit}>send</button>
-                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={(a) => { alert("response = " + a) }}></div>
+                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={handleRecaptureResponse}></div>
                             </div>
 
 
