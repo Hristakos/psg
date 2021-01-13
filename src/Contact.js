@@ -6,13 +6,14 @@ import * as Yup from "yup";
 
 import emailjs, { init } from 'emailjs-com';
 import EmailStatus from './EmailStatus';
+import { faMinus } from '@fortawesome/free-solid-svg-icons';
 
 
 const contactSchema = Yup.object().shape({
     contactFirstName: Yup.string().required().label("First Name"),
     contactLastName: Yup.string().required().label("Last Name"),
     contactEmail: Yup.string().email().required().label("Email"),
-    contactPhone: Yup.string().required().label("Phone"),
+    contactPhone: Yup.number().required().min(0).max(9999999999).label("Phone").typeError("Phone must be a number"),
     contactMessage: Yup.string().required().label("Message")
 });
 
@@ -33,12 +34,13 @@ const ContactTextArea = ({ label, error, onChange }) => {
     )
 }
 
-const ContactInput = ({ label, error, onChange }) => {
+const ContactInput = ({ label, error, onChange, ...otherprops }) => {
+
     return (
         <div className="contact-input-container">
             <div className="contact-input-label"> <p>{label}</p></div>
             <div className="contact-input">
-                <input onChange={onChange} />
+                <input onChange={onChange} {...otherprops} />
             </div>
             <div className="contact-input-error">
                 <p>{error}</p>
@@ -127,6 +129,8 @@ const Form = ({ handleSendingEmail }) => {
                                     label="Contact Number"
                                     onChange={handleChange("contactPhone")}
                                     error={errors ? errors.contactPhone : ""}
+                                    minLength={10}
+                                    maxLength={10}
                                 />
                                 <ContactInput
                                     label="Company (if applicable)"

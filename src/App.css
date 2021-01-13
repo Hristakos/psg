@@ -288,7 +288,7 @@ nav {
 
 @media screen and (max-width:850px)  and (orientation: landscape) {
   .our-story {
-    height: 490vw;
+    height: 540vw;
   }
 
   .our-story-section {
@@ -296,7 +296,7 @@ nav {
   }
 
   .our-story-section-2 {
-    height: 290vw;
+    height: 340vw;
   }
 }
 
