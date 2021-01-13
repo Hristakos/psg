@@ -15,7 +15,7 @@ const contactSchema = Yup.object().shape({
     contactEmail: Yup.string().email().required().label("Email"),
     contactPhone: Yup.number().required().min(0).max(9999999999).label("Phone").typeError("Phone must be a number"),
     contactMessage: Yup.string().required().label("Message"),
-    recaptureResponse: Yup.string().required().label("Recapture Response")
+
 });
 
 
@@ -90,7 +90,7 @@ const Form = ({ handleSendingEmail }) => {
         <div className="contact-form">
             {sendingEmail === false && emailSent === null ?
                 <Formik
-                    initialValues={{ contactFirstName: "", contactLastName: "", contactEmail: "", contactPhone: "", contactCompany: "", contactMessage: "", recaptureResponse: "" }}
+                    initialValues={{ contactFirstName: "", contactLastName: "", contactEmail: "", contactPhone: "", contactCompany: "", contactMessage: "" }}
                     onSubmit={async (fields, { setFieldError }) => {
                         setSendingEmail(true)
                         sendEmail("template_7riie8i", {
@@ -100,8 +100,7 @@ const Form = ({ handleSendingEmail }) => {
                             reply_to: fields.contactEmail,
                             contact_phone: fields.contactPhone,
                             contact_company: fields.contactCompany,
-                            message: fields.contactMessage,
-                            "g-recaptcha-response": fields.recaptureResponse
+                            message: fields.contactMessage
 
 
                         })
@@ -155,9 +154,9 @@ const Form = ({ handleSendingEmail }) => {
                                 />
                             </div>
                             <div className="contact-send">
-                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={(token) => console.log("token = " + token)}></div>
+
                                 <button type="submit" onClick={handleSubmit}>send</button>
-                                {errors.recaptureResponse}
+
                             </div>
 
 
