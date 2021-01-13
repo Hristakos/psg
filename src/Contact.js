@@ -18,12 +18,12 @@ const contactSchema = Yup.object().shape({
 });
 
 
-const ContactTextArea = ({ label, error, onChange }) => {
+const ContactTextArea = ({ label, error, onChange, ...otherprops }) => {
     return (
         <div className="contact-text-area-container">
             <div className="contact-input-label">{label}</div>
             <div className="contact-text-area">
-                <textarea onChange={onChange} />
+                <textarea onChange={onChange}{...otherprops} />
             </div>
             <div className="contact-text-area-error">
                 <p>{error}</p>
@@ -140,7 +140,8 @@ const Form = ({ handleSendingEmail }) => {
                             </div>
                             <div className="contact-message">
                                 <ContactTextArea
-                                    label="Tell us more below. We'll aim to get back to you as soon as possible."
+                                    label="Message"
+                                    placeholder="Tell us more here. We'll aim to get back to you as soon as possible."
                                     onChange={handleChange("contactMessage")}
                                     error={errors ? errors.contactMessage : ""}
                                 />
@@ -148,7 +149,10 @@ const Form = ({ handleSendingEmail }) => {
                             <div className="contact-send">
 
                                 <button type="submit" onClick={handleSubmit}>send</button>
+                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW"></div>
                             </div>
+
+
                         </>)}
                 </Formik> :
                 <EmailStatus emailSent={emailSent} sendingEmail={sendingEmail} handleButtonClick={() => setEmailSent(null)} />
@@ -179,3 +183,7 @@ function Contact() {
 }
 
 export default Contact;
+
+
+
+
