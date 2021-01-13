@@ -14,7 +14,8 @@ const contactSchema = Yup.object().shape({
     contactLastName: Yup.string().required().label("Last Name"),
     contactEmail: Yup.string().email().required().label("Email"),
     contactPhone: Yup.number().required().min(0).max(9999999999).label("Phone").typeError("Phone must be a number"),
-    contactMessage: Yup.string().required().label("Message")
+    contactMessage: Yup.string().required().label("Message"),
+    recaptureResponse: Yup.string().required().label("Recapture Response")
 });
 
 
@@ -59,9 +60,12 @@ const Form = ({ handleSendingEmail }) => {
     const [emailSent, setEmailSent] = useState(null);
     const sendEmail = (templateId, variables) => {
         try {
+
             emailjs.send(
-                "service_1mn3ymq", templateId,
-                variables, { "g-recaptcha-response": "test" }
+                "service_1mn3ymq",
+                templateId,
+                variables,
+
             ).then(res => {
                 console.log('Email successfully sent!')
                 // setLoading(false)
@@ -82,13 +86,13 @@ const Form = ({ handleSendingEmail }) => {
 
     }
     const handleRecaptureResponse = (token) => {
-        console.log("response = " + token)
+        recaptureResponse = token;
     }
     return (
         <div className="contact-form">
             {sendingEmail === false && emailSent === null ?
                 <Formik
-                    initialValues={{ contactFirstName: "", contactLastName: "", contactEmail: "", contactPhone: "", contactCompany: "", contactMessage: "" }}
+                    initialValues={{ contactFirstName: "", contactLastName: "", contactEmail: "", contactPhone: "", contactCompany: "", contactMessage: "", recaptureResponse="" }}
                     onSubmit={async (fields, { setFieldError }) => {
                         setSendingEmail(true)
                         sendEmail("template_7riie8i", {
@@ -99,6 +103,7 @@ const Form = ({ handleSendingEmail }) => {
                             contact_phone: fields.contactPhone,
                             contact_company: fields.contactCompany,
                             message: fields.contactMessage,
+                            "g-recaptcha-response": fields.recaptureResponse
 
 
                         })
@@ -152,9 +157,9 @@ const Form = ({ handleSendingEmail }) => {
                                 />
                             </div>
                             <div className="contact-send">
-
+                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={handleChange("recaptureResponse")}></div>
                                 <button type="submit" onClick={handleSubmit}>send</button>
-                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={handleRecaptureResponse}></div>
+                                {errors.recaptureResponse}
                             </div>
 
 
