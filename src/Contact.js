@@ -61,7 +61,7 @@ const Form = ({ handleSendingEmail }) => {
         try {
             emailjs.send(
                 "service_1mn3ymq", templateId,
-                variables
+                variables,
             ).then(res => {
                 console.log('Email successfully sent!')
                 // setLoading(false)
@@ -96,6 +96,8 @@ const Form = ({ handleSendingEmail }) => {
                             contact_phone: fields.contactPhone,
                             contact_company: fields.contactCompany,
                             message: fields.contactMessage,
+                            "g-recaptcha-response": ""
+
                         })
                     }
 
@@ -149,7 +151,7 @@ const Form = ({ handleSendingEmail }) => {
                             <div className="contact-send">
 
                                 <button type="submit" onClick={handleSubmit}>send</button>
-                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW"></div>
+                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW" data-callback={(a) => { alert("response = " + a) }}></div>
                             </div>
 
 
