@@ -5,10 +5,19 @@ import CustomSlider from './components/CustomSlider';
 function Home() {
     useEffect(() => {
         //preloading image
-        // faceArray.forEach((face) => {
-        const img = new Image();
-        img.src = "../assets/images/pic1new.png";
-        // });
+        const imagesArray = [
+            { name: "../assets/images/pic1new.png" },
+            { name: "../assets/images/pic2new.png" },
+            { name: "../assets/images/pic6new.png" },
+            { name: "../assets/images/bathroom.png" },
+            { name: "../assets/images/kitchen.png" },
+            { name: "../assets/images/living.png" },
+            { name: "../assets/images/bedroom.png" }
+        ]
+        imagesArray.forEach((image) => {
+            const img = new Image();
+            img.src = image.name;
+        });
     }, []);
     return (
         <div className="home-container">
