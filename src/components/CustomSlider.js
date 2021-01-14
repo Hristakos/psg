@@ -9,6 +9,7 @@ export default class CustomSlider extends Component {
             dotsColor: "white",
             duration: 200,
             pauseOnHover: false,
+            autoplaySpeed: 6000
         };
         return (
             <div className="slider">
