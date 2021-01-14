@@ -49,6 +49,13 @@
 
 
   <script>
+
+    function preloadImage(imagePath) {
+      var img = document.createElement('IMG');
+      img.src = imagePath;
+    }
+
+    preloadImage('assets/images/pic1new.png');
     const scroll = new SmoothScroll('.navbar a[href*="#"]', {
       speed: 800
     });

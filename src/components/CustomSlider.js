@@ -8,12 +8,12 @@ export default class CustomSlider extends Component {
             dots: true,
             dotsColor: "white",
             duration: 200,
-            pauseOnHover: false,
-            autoplaySpeed: 6000
+            pauseOnHover: false
         };
         return (
             <div className="slider">
                 <Slider {...settings} >
+
                     <div className="slider-image">
                         <img className="slider-image" src="../assets/images/pic1new.png" alt="pic1.png" />
                     </div>

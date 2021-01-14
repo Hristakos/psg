@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Home.css"
 import CustomSlider from './components/CustomSlider';
 
 function Home() {
+    useEffect(() => {
+        //preloading image
+        // faceArray.forEach((face) => {
+        const img = new Image();
+        img.src = "../assets/images/pic1new.png";
+        // });
+    }, []);
     return (
         <div className="home-container">
 
