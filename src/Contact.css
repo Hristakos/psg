@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 90%;
     width: 50%;
     /* margin-top: 5%; */
@@ -76,8 +76,10 @@
 .contact-send {
     display: flex;
     align-items: center;
-    width: 90%;
+    justify-content: center;
+    width: 40%;
     height: 10%;
+    margin: 5% 30%;
 }
 
 .contact-send button {
@@ -97,11 +99,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    gap: 5px;
+    gap: 1vh;
     margin: 1vw;
+    
     /* background-color: turquoise; */
 }
 .contact-input-label {
@@ -161,7 +164,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 95%;
     height: 100%;
     gap: 1vh;
