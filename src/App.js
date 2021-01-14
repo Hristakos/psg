@@ -22,8 +22,6 @@ function App() {
   useEffect(() => {
     //preloading image
     const imagesArray = [
-      { name: "../assets/homebackground.png" },
-      { name: "../assets/logo.png" },
       { name: "../assets/images/pic1new.png" },
       { name: "../assets/images/pic2new.png" },
       { name: "../assets/images/pic6new.png" },

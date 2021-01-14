@@ -71,7 +71,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-color: rgba(52,85 ,69,1); */
+  background-color: rgba(52,85 ,69,1);
   color: black;
 }
 .range {

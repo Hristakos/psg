@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 import './NavBar.css';
 
 function NavBar() {
+    useEffect(() => {
+        const img = new Image();
+        img.src = "../assets/logo.png"
+    }, []);
     return (
         // <div>
         <nav className="navbar">
-            <a href="#home"><img className="logo" src="./assets/logo.png" /></a>
+            <a href="#home"><img className="logo" src="../assets/logo.png" /></a>
             <ul>
 
                 <a href="#ourstory"><li>About</li></a>
