@@ -189,12 +189,12 @@ export
 
 
                                 </div>
-                                <div>
+                                <div className="contact-recapture">
                                     <div className="g-recaptcha"
                                         data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW"
                                         data-callback={"onloadCallBack"}
                                         data-expired-callback={"recaptchaExpired"}
-                                        data-size="compact"
+                                    // data-size="compact"
 
                                     />
                                 </div>
