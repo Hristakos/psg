@@ -299,7 +299,7 @@ input {
 }
 .contact-send {
     flex-direction: column;
-    /* height: 20%; */
+    height: 20%;
     width: 80%;
 }
 }

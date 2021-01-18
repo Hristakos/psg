@@ -184,6 +184,12 @@ export
                                 <div className="contact-send">
 
                                     <button type="submit" onClick={handleSubmit}>send</button>
+
+
+
+
+                                </div>
+                                <div>
                                     <div className="g-recaptcha"
                                         data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW"
                                         data-callback={"onloadCallBack"}
@@ -191,9 +197,6 @@ export
                                         data-size="compact"
 
                                     />
-
-
-
                                 </div>
 
 
