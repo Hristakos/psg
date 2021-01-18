@@ -12,6 +12,7 @@
       background-repeat: no-repeat;
   background-size: cover;
   min-width: 300px;
+ 
 }
 
 .contact-form-container {
@@ -40,8 +41,8 @@
     /* justify-content: space-evenly; */
     width: 90%;
     height: 90%;
-    margin: 2vh;
-    gap: 1vh;
+    margin: 2%;
+    gap: 1%;
 
     
 }
@@ -51,7 +52,7 @@
     align-items: center;
     width: 100%;
     height: 15%;
-    gap: 1vh;
+    gap: 1%;
 
 }
 .contact-email {
@@ -59,7 +60,7 @@
     align-items: center;
     width: 100%;
     height: 15%;
-    gap: 1vh;
+    gap: 1%;
    
 
 }
@@ -69,17 +70,18 @@
     align-items: center;
     width: 100%;
     height: 15%;
-    gap: 1vh;
+    gap: 1%;
 
 }
 
 .contact-send {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40%;
+    justify-content: space-between;
+    width: 100%;
     height: 10%;
     margin: 5% 30%;
+    gap: 5%;
 }
 
 .contact-send button {
@@ -102,8 +104,8 @@
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    gap: 1vh;
-    margin: 1vw;
+    gap: 1%;
+    margin: 1%;
     
     /* background-color: turquoise; */
 }
@@ -167,8 +169,8 @@
     justify-content: space-evenly;
     width: 95%;
     height: 100%;
-    gap: 1vh;
-    margin: 1vw;
+    gap: 1%;
+    margin: 1%;
     /* background-color: turquoise; */
 }
 
@@ -295,5 +297,33 @@ input {
   
     width: 75vw;
 }
+.contact-send {
+    flex-direction: column;
+    /* height: 20%; */
+    width: 80%;
+}
+}
+
+@media screen and (min-height:1000px)  and (orientation: portrait) {
+.contact {
+    height: 150vh;
+    justify-content: flex-start;
+}
+.contact-form-container {
+    /* background-color: cyan; */
+    
+    width: 75vw;
+
+}
+.contact-page-heading {
+   top: 15vh;
+    
+}
+.contact-page-container {
+    justify-content: flex-start;
+    top: 20vh;
+    height: 90vh;
+}
+
 }
 

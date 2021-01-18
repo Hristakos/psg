@@ -160,7 +160,8 @@ width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color:  rgb(52,85,69);
+  background-color: rgb(176 ,191, 184);
+  /* background-color:  rgb(52,85,69); */
   /* color: ; */
 
 }
@@ -286,7 +287,7 @@ nav {
 
 
 
-@media screen and (max-width:850px)  and (orientation: landscape) {
+@media screen and (max-width:900px)  and (orientation: landscape) {
   .our-story {
     height: 540vw;
   }
@@ -297,6 +298,10 @@ nav {
 
   .our-story-section-2 {
     height: 340vw;
+  }
+
+  .contact {
+    height:100vw;
   }
 }
 

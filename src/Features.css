@@ -41,11 +41,12 @@
     height: 60vh;
     align-items: center;
     justify-content: center;
-    background-color: rgb(176 ,191, 184);
+    /* background-color: rgb(176 ,191, 184); */
     font-family: 'Red Hat Display', sans-serif;
      /* min-width: 500px; */
      /* max-width: 490px; */
     /* border: white 1px solid; */
+     background-color:  rgb(52,85,69);
    
 }
 
@@ -160,7 +161,7 @@
 }
 
 
-@media screen and (max-width:850px)  and (orientation: landscape) {
+@media screen and (max-width:900px)  and (orientation: landscape) {
     .feature-page-heading {
         /* color: red; */
     }

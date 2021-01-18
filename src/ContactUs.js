@@ -114,6 +114,8 @@ export default function ContactUs() {
                                     type="submit"
                                     height={50}
                                     onSubmit={handleSubmit} />
+
+                                <div class="g-recaptcha" data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW"></div>
                             </>)}
                     </Formik>
                 </div> :
