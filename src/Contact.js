@@ -7,6 +7,8 @@ import * as Yup from "yup";
 import emailjs, { init } from 'emailjs-com';
 import EmailStatus from './EmailStatus';
 import { faMinus } from '@fortawesome/free-solid-svg-icons';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 
 const contactSchema = Yup.object().shape({
@@ -61,19 +63,14 @@ export
         const [emailSent, setEmailSent] = useState(null);
         const [captureResponse, setCaptureResponse] = useState(null);
 
-        const onloadCallBack = (response) => {
-            if (response) {
-                setCaptureResponse(response)
+
+        function onRecaptureChange(value) {
+            if (value) {
+                setCaptureResponse(value)
             } else {
                 setCaptureResponse(null)
             }
         }
-        const recaptchaExpired = () => {
-
-            setCaptureResponse(null);
-        }
-        window.onloadCallBack = onloadCallBack;
-        window.recaptchaExpired = recaptchaExpired;
 
         const sendEmail = (templateId, variables) => {
             try {
@@ -183,25 +180,25 @@ export
                                 </div>
                                 <div className="contact-send">
 
+
+
                                     <button type="submit" onClick={handleSubmit}>send</button>
 
 
-
-
-                                </div>
-                                <div className="contact-recapture">
-                                    <div className="g-recaptcha"
-                                        data-sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW"
-                                        data-callback={"onloadCallBack"}
-                                        data-expired-callback={"recaptchaExpired"}
-                                    // data-size="compact"
-
+                                    <ReCAPTCHA
+                                        sitekey="6LdcRCoaAAAAABhj0z2QpTLzO3a6cBSbCkfJG8zW"
+                                        onChange={onRecaptureChange}
                                     />
+
+
                                 </div>
+
 
 
                             </>)}
-                    </Formik> :
+                    </Formik>
+
+                    :
                     <EmailStatus emailSent={emailSent} sendingEmail={sendingEmail} handleButtonClick={() => setEmailSent(null)} />
                 }
             </div>

@@ -30,16 +30,7 @@
 
 }
 
-.center-email-status {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    /* color: black; */
-    background-color: cyan;
 
-}
 
 @media screen and (max-width: 600px) {
 

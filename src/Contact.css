@@ -85,7 +85,7 @@
 }
 
 .contact-send button {
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-color: rgb(176 ,191, 184);
     color: white;
@@ -242,7 +242,7 @@ input {
 
 
 iframe {
-    transform: scale(.5) ;
+    transform: scale(.7) ;
 
 }
 
@@ -315,11 +315,7 @@ iframe {
   
     width: 75vw;
 }
-.contact-send {
-    flex-direction: column;
-    height: 20%;
-    width: 80%;
-}
+
 }
 
 @media screen and (min-height:1000px)  and (orientation: portrait) {
@@ -341,6 +337,9 @@ iframe {
     justify-content: flex-start;
     top: 20vh;
     height: 90vh;
+}
+.contact-send {
+    flex-direction: row;
 }
 
 }
