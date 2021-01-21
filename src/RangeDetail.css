@@ -1,0 +1,220 @@
+.range-detail-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(52,85,69);
+}
+
+.range-detail-page-heading {
+  display: flex;
+  position: relative;
+  top: 20vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5vh;
+
+}
+
+.range-detail-view-container {
+    
+    position: relative;
+    top: 15vh;
+    width: 80%;
+    margin: 5% 10%;
+    height: 60%;
+    /* border: 1px solid white; */
+    /* background-color: thistle; */
+}
+
+.range-detail-view-flex {
+    display: flex;
+    /* flex-direction: column; */
+    grid-template-columns: 4fr 3fr 3fr;
+    width: 100%;
+    height: 100%;
+    /* background-color: thistle; */
+}
+
+.range-detail-view-floorplan {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr 5fr;
+    /* justify-content:center; */
+    /* align-items: center; */
+    width: 90%;
+    margin: 0 5%;
+    /* height: 100%; */
+    /* background-color: white; */
+}
+.range-detail-view-floorplan-image {
+    width: 100%;
+    /* height: 100%; */
+}
+.range-detail-view-floorplan img {
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: palegoldenrod; */
+}
+
+.range-detail-view-floorplan-heading {
+    font-size: 16px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+    margin: 5vh 0%;
+}
+.range-detail-view-detail-heading {
+    display: flex;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+    margin: 5vh 0;
+}
+
+.range-detail-view-detail {
+    display: flex;
+   flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 5%;
+    /* height: 100%; */
+    color: white;
+    /* border-left: 1px solid white; */
+    /* background-color: red; */
+}
+.range-detail-view-detail-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* padding-left: 10%; */
+    font-size: 16px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    /* background-color: blanchedalmond; */
+}
+.range-detail-view-specifications {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 5%;
+    /* height: 100%; */
+    color: white;
+    /* border-left: 1px solid white; */
+    /* background-color: tomato; */
+    /* padding-left: 10%; */
+}
+
+.range-detail-view-specifications-heading {
+   
+    font-size: 16px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+    margin: 5vh 0;
+    /* padding-left: 10%; */
+}
+.range-detail-view-specifications a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+   
+    
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 2% 0;
+
+}
+.range-detail-view-specifications-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    /* padding-left: 10%; */
+    font-size: 16px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    /* background-color: blanchedalmond; */
+}
+
+.enquire-link {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 5%; */
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-bottom: 10%;
+    
+
+}
+
+@media screen and (max-width: 1100px) {
+.range-detail-view-flex {
+    flex-direction: column;
+
+}
+.range-detail-container {
+    height: 150vh;
+}
+
+.range-detail-view-container {
+    height: 90%;
+}
+
+.range-detail-view-floorplan {
+    /* align-items: center; */
+    justify-content: center;
+}
+.range-detail-view-floorplan-image {
+       width: fit-content;
+}
+
+.range-detail-view-detail {
+    /* align-items: center; */
+}
+
+.range-detail-view-specifications  {
+    /* align-items: center; */
+    /* margin: 0; */
+}
+
+.range-detail-view-specifications-content {
+    /* align-items: center; */
+}
+
+.enquire-link {
+    width: 200px;
+    height: 100px;
+
+}
+
+}
+
+@media screen and (max-width: 850px)and (orientation: portrait)  {
+.range-detail-container {
+    height: 170vh;
+}
+}
+
+@media screen and (max-width: 400px)and (orientation: portrait)  {
+.range-detail-container {
+    height: 200vh;
+}
+}
