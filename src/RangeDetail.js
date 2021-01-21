@@ -38,6 +38,9 @@ const rangeData = [
 
 
 const RangeDetailView = ({ rangeData }) => {
+    useEffect(() => {
+        window.scrollTo({ behavior: "smooth", top: true })
+    }, [])
     return (
         <div className="range-detail-view-container">
             <div className="range-detail-view-flex">
@@ -66,7 +69,7 @@ const RangeDetailView = ({ rangeData }) => {
                         {rangeData.specifications.map((spec, index) => (<li key={index}>{spec}</li>))}
                     </div>
                     <div className="enquire-link">
-                        <a href="/#contact">Enquire Now</a>
+                        <a style={{ width: "100%", textAlign: "center" }} href="/#contact">Enquire Now</a>
                     </div>
 
                 </div>
