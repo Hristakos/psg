@@ -16,7 +16,10 @@ const Range = ({ title, price, image = "./tools.svg", detail, link, id }) => {
                 <div className="range-detail"><ul>
                     {detail.map((feature, index) => (<li key={index}>{feature}</li>))}
                 </ul></div>
-                <div className="range-link"><NavLink to={`${link}?id=${id}`} params={{ id: 1 }}><span className="range-link-text"><p>Tell me more</p> <img src="./rangearrow.svg" /></span></NavLink></div>
+                <div className="range-link-container">
+
+                    <div className="range-link"><NavLink to={`${link}?id=${id}`} params={{ id: 1 }}><span className="range-link-text"><div>Tell me more</div> <img src="./rangearrow.svg" /></span></NavLink></div>
+                </div>
 
             </div>
         </div>

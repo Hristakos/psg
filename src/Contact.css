@@ -86,10 +86,10 @@
 
 .contact-send button {
     width: 120px;
-    height: 75px;
+    height: 60px;
     background-color: rgb(176 ,191, 184);
     color: white;
-    border: none;
+    border: solid white 1px;
     border-radius: 30px;
     text-transform: capitalize;
     font-size: 26px;

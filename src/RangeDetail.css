@@ -34,7 +34,7 @@
     /* flex-direction: column; */
     grid-template-columns: 4fr 3fr 3fr;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     /* background-color: thistle; */
 }
 
@@ -52,6 +52,7 @@
 .range-detail-view-floorplan-image {
     width: 100%;
     /* height: 100%; */
+    background-color: white;
 }
 .range-detail-view-floorplan img {
     width: 100%;
@@ -65,6 +66,7 @@
     font-family: 'Red Hat Display', sans-serif;
     text-transform: uppercase;
     margin: 5vh 0%;
+    font-weight: bold;
 }
 .range-detail-view-detail-heading {
     display: flex;
@@ -74,6 +76,7 @@
     font-family: 'Red Hat Display', sans-serif;
     text-transform: uppercase;
     margin: 5vh 0;
+    font-weight: bold;
 }
 
 .range-detail-view-detail {
@@ -121,6 +124,7 @@
     text-transform: uppercase;
     margin: 5vh 0;
     /* padding-left: 10%; */
+    font-weight: bold;
 }
 .range-detail-view-specifications a {
     text-decoration: none;
@@ -150,17 +154,25 @@ li{
     font-family: 'Red Hat Display', sans-serif;
     /* background-color: blanchedalmond; */
 }
-
+.enquire-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    /* background-color: white; */
+}
 .enquire-link {
     display: flex;
-    width: 90%;
+    width: 120px;
     height: 60px;
     align-items: center;
     justify-content: center;
     /* margin: 0 5%; */
     border: 1px solid white;
     border-radius: 30px;
-    margin: 10% 0;
+    margin: 10% 0 0 0;
+    background-color: rgb(176 ,191, 184);
     
 
 }
@@ -170,13 +182,13 @@ li{
     flex-direction: column;
 
 }
-.range-detail-container {
+/* .range-detail-container {
     height: 150vh;
 }
 
 .range-detail-view-container {
     height: 90%;
-}
+} */
 
 .range-detail-view-floorplan {
     /* align-items: center; */
@@ -199,30 +211,26 @@ li{
     /* align-items: center; */
 }
 
-.enquire-link {
-    width: 200px;
-    height: 100px;
 
-}
 
 }
 
 @media screen and (max-width: 850px)and (orientation: portrait)  {
-.range-detail-container {
+/* .range-detail-container {
     height: 170vh;
-}
+} */
 }
 
 @media screen and (max-width: 400px)and (orientation: portrait)  {
-.range-detail-container {
+/* .range-detail-container {
     height: 200vh;
-}
+} */
 }
 
 
 @media screen and (max-width:900px)  and (orientation: landscape) {
 .range-detail-container {
-    height: 170vw;
+    height: 200vw;
 }
 
 .range-detail-view-container {
@@ -233,9 +241,5 @@ li{
     flex-direction: column;
 
 }
-.enquire-link {
-    width: 200px;
-    height: 100px;
 
-}
 }

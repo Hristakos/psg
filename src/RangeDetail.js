@@ -67,10 +67,15 @@ const RangeDetailView = ({ rangeData }) => {
                     </div>
                     <div className="range-detail-view-specifications-content">
                         {rangeData.specifications.map((spec, index) => (<li key={index}>{spec}</li>))}
+
                     </div>
-                    <div className="enquire-link">
-                        <a style={{ width: "100%", textAlign: "center" }} href="/#contact">Enquire Now</a>
+                    <div className="enquire-link-container">
+
+                        <div className="enquire-link">
+                            <a style={{ width: "100%", textAlign: "center" }} href="/#contact">Enquire Now</a>
+                        </div>
                     </div>
+
 
                 </div>
 

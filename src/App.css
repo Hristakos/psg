@@ -81,7 +81,7 @@ section {
   /* justify-content: center; */
   text-align: center;
   width: 100%;
-  height: 125vh; 
+  height: 120vh; 
   scroll-snap-align: center;
   background-image: url("./rangebackground.png");
   background-repeat: no-repeat;
@@ -214,11 +214,6 @@ nav {
   }
 } */
 
-@media screen and (max-width: 1130px) {
- .range {
-    height: 240vh;
-
- }
 
 @media screen and (max-width: 850px) and (orientation: portrait) {
   .our-story {
@@ -255,15 +250,12 @@ nav {
   .our-story-section-2 {
     height: 535vh;
   }
- .range {
-    height: 450vh;
-
- }
-
-}
 
 
 }
+
+
+
 
 @media screen and (max-width: 360px) and (orientation: portrait) {
 

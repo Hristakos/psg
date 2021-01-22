@@ -49,6 +49,7 @@
     font-family: 'Red Hat Display', sans-serif;
     text-transform: uppercase;
     color : white;
+    font-weight: bold;
 
 }
 .range-outline {
@@ -101,22 +102,32 @@
     text-align: left;
  
 }
-
+.range-link-container {
+    display: flex;
+    align-items: flex-end;
+    
+    /* background-color: white; */
+}
 .range-link {
     display: flex;
-    width: 90%;
-    height: 70%;
+   
+    height: 60px;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    margin: 0 5%;
+    margin: 5%;
     border: 1px solid white;
-    border-radius: 30px;
+    border-radius: 60px;
+     background-color: rgb(176 ,191, 184);
     
 
 }
 
 .range-link a {
+    display: flex;
+    justify-content: space-between;
     width: 90%;
+    height: 100%;
     text-decoration: none;
     color: white;
     font-family: 'Red Hat Display', sans-serif;
@@ -127,29 +138,74 @@
 
 .range-link-text {
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
 }
 
 @media screen and (max-width: 1130px) {
+ .range {
+    height: 220vh;
+
+ }
+}
+@media screen and (max-width: 1111px) {
     .range-outline {
         grid-template-rows: 1fr 2fr 7fr 1.5fr;
 
     }
-
-    
-}
-
-@media screen and (max-width: 1130px) {
-    .range-container {
-        height: 100vh;
+    .range-link {
+    height: 60px;
+    width: 100%;
     }
 
     
 }
 
-@media screen and (max-width:900px)  and (orientation: landscape) {
+@media screen and (max-width: 1111px) {
+    /* .range-container {
+        height: 120vh;
+    } */
+
+    
+}
+@media screen and (max-width: 555px) {
+    /* .range-container {
+        height: 120vh;
+    } */
+.range {
+    height: 380vh;
+}
+    
+}
+@media screen and (max-height:900px) and (orientation:portrait) {
+    .range {
+        height: 440vh;
+    }
+    .range-container {
+        height: 100vh;
+    }
+}
+@media screen and (max-height:720px) and (orientation:portrait) {
+    .range {
+        height: 520vh;
+    }
+    .range-container {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-height:520px) and (orientation:portrait) {
+    .range {
+        height: 620vh;
+    }
+    .range-container {
+        height: 140vh;
+    }
+}
+
+@media screen and (max-width:1200px)  and (orientation: landscape) {
 
 .range-container{ 
     /* background-color: blueviolet; */
@@ -159,6 +215,10 @@
     height: 275vw;
 }
 }
+
+
+
+
 
 
 
