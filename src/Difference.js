@@ -45,19 +45,19 @@ function Difference() {
 
                     <DifferenceSmall
                         image="tools.svg"
-                        heading="No concrete, digging or stumping."
+                        heading="No concrete, digging or stumping"
                         detail="Our unique foundation system is comprised of a engineered insulated panel floor system which achieves a 7+ energy star rating and high BAL and cyclone ratings" />
                     <DifferenceSmall
                         image="maintenance.svg"
-                        heading="Little to no maintenance."
-                        detail="Customised wall, floor roof and floor panels engineered to Australian design and standards are fully insulated meaning no plasterboards, paint, cornices, tiles, brick work, render" />
+                        heading="Little to no maintenance"
+                        detail="Our customised wall and floor panels are engineered to Australian standards and specifications, which are fully insulated meaning plasterboards, paint, tiles, brick work or render finishes are not required" />
                 </div>
                 <div className="difference-outline-large">
                     <Differencelarge
                         image="time.svg"
                         heading="45-day build time"
-                        detail="Our flat-pack home turns traditional building on its head with no studs, joists, bearers, digging or excavation required, the flat-pack home can be built anywhere within 45-days with materials delivered direct to site. Our unique roof, wall and floor panels mean fast installation with no expensive trades needed for plastering, painters tilers, brick layers, renders.
-         Mininimal number of trades personal required." />
+                        detail="Our modular home turns traditional building on its head with no studs, joists, bearers, digging or excavation required, the modular home can be built anywhere within 45-days with materials delivered direct to site. Our unique roof, wall and floor panels mean fast installation with no expensive trades needed for plastering, painters, tilers, brick layers, renders.
+         Mininimal number of trades personal required" />
                 </div>
             </div>
         </>

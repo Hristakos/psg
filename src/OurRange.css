@@ -35,7 +35,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 80vh;
+    height: 100vh;
     
     /* width: 20vw; */
 }
@@ -144,13 +144,13 @@
     gap: 10px;
 }
 
-@media screen and (max-width: 1130px) {
+/* @media screen and (max-width: 1130px) {
  .range {
     height: 220vh;
 
  }
-}
-@media screen and (max-width: 1111px) {
+} */
+@media screen and (max-width: 1111px) and (orientation:portrait) {
     .range-outline {
         grid-template-rows: 1fr 2fr 7fr 1.5fr;
 
@@ -163,31 +163,47 @@
     
 }
 
-@media screen and (max-width: 1111px) {
-    /* .range-container {
-        height: 120vh;
-    } */
+@media screen and (max-width: 1111px) and (orientation:portrait) {
+    .range-container {
+        /* height: 120vh; */
+    }
+
+    .range {
+        height: 240vh ;
+    }
 
     
 }
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 555px) and (orientation:portrait){
     /* .range-container {
         height: 120vh;
     } */
 .range {
-    height: 380vh;
+    height: 480vh;
 }
     
 }
-@media screen and (max-height:900px) and (orientation:portrait) {
+
+@media screen and (max-width: 555px) and (orientation:portrait){
+    /* .range-container {
+        height: 120vh;
+    } */
+.range {
+    height: 540vh;
+}
+.range-container {
+    height: 120vh;
+}
+}
+/* @media screen and (max-height:900px) and (orientation:portrait) {
     .range {
-        height: 440vh;
+        height: 250vh;
     }
     .range-container {
         height: 100vh;
     }
-}
-@media screen and (max-height:720px) and (orientation:portrait) {
+} */
+/* @media screen and (max-height:720px) and (orientation:portrait) {
     .range {
         height: 520vh;
     }
@@ -203,9 +219,9 @@
     .range-container {
         height: 140vh;
     }
-}
+} */
 
-@media screen and (max-width:1200px)  and (orientation: landscape) {
+@media screen and (max-width:1111px)  and (orientation: landscape) {
 
 .range-container{ 
     /* background-color: blueviolet; */
@@ -214,6 +230,15 @@
 .range {
     height: 275vw;
 }
+}
+
+@media screen and (min-height: 1000px) and (min-width:1111px){
+    .range-container {
+        height:80vh;
+    }
+
+    
+
 }
 
 

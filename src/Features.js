@@ -41,7 +41,7 @@ function Features() {
                     image="./noplaster.png" />
                 <Feature
                     heading="Never too hot, never too cold"
-                    detail="Our customized Australian-made panels have a unique thermal sandwich composition which gives the building shell exceptional thermal qualities – exceeding a 7+-star Energy Rating in all Metropolitan and Regional Victorian areas. In warmer climates the unique insulation qualities achieves a higher rating."
+                    detail="Our customised Australian-made panels have a unique thermal sandwich composition which gives the building shell exceptional thermal qualities – exceeding a 7+-star Energy Rating in all Metropolitan and Regional Victorian areas. In warmer climates the unique insulation qualities achieves a higher rating."
                     image="./hotcold.png" />
                 <Feature
                     heading="Solar capability"
@@ -49,7 +49,7 @@ function Features() {
                     image="./solar.png" />
                 <Feature
                     heading="Strong and durable"
-                    detail="A unique steel subfloor means our flat-pack home is strong but lightweight, termite proof and rust resistant. Australian made and engineered our flat pack home has been stress tested to all Australian standards achieving outstanding energy, fire and cyclone ratings"
+                    detail="A unique steel subfloor means our modular home is strong but lightweight, termite proof and rust resistant. Australian made and engineered our modular home has been stress tested to all Australian standards achieving outstanding energy, fire and cyclone ratings"
                     image="./durable.png" />
 
             </div>
