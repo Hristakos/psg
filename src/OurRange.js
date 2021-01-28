@@ -53,9 +53,9 @@ function OurRange() {
                 </div>
                 <div className="range-wrapper">
                     <Range
-                        title="Gold Model"
+                        title="Change rooms"
                         price="$199,000"
-                        image="./design.png"
+                        image="./footyroomstigers1.jpg"
                         detail={["3 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"]}
                         link="/RangeDetail"
                         id={3}

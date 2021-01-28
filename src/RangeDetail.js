@@ -6,21 +6,24 @@ const rangeData = [
     {
         id: 1,
         title: "Bronze Model",
-        floorplan: "./floorplan.svg",
+        floorplan: "./1bedfloorplan.jpg",
+        floorplanMobile: "./1bedroomfloorplanportrait.jpg",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus orci ac auctor augue mauris augue neque gravida in.Placerat vestibulum lectus mauris ultrices eros in.Auctor eu augue ut lectus arcu.Senectus et netus et malesuada.",
         specifications: ["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
     },
     {
         id: 2,
         title: "Silver Model",
-        floorplan: "./floorplan.svg",
+        floorplan: "./2bedfloorplan.jpg",
+        floorplanMobile: "./2bedroomfloorplanportrait.jpg",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus orci ac auctor augue mauris augue neque gravida in.Placerat vestibulum lectus mauris ultrices eros in.Auctor eu augue ut lectus arcu.Senectus et netus et malesuada.",
         specifications: ["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
     },
     {
         id: 3,
-        title: "Gold Model",
-        floorplan: "./floorplan.svg",
+        title: "Change rooms",
+        floorplan: "./footyroomsfloorplan.jpg",
+        floorplanMobile: "./footyroomsfloorplan.jpg",
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus orci ac auctor augue mauris augue neque gravida in.Placerat vestibulum lectus mauris ultrices eros in.Auctor eu augue ut lectus arcu.Senectus et netus et malesuada.",
         specifications: ["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
     },
@@ -38,11 +41,23 @@ const rangeData = [
 
 
 const RangeDetailView = ({ rangeData }) => {
+    // const [device, setDevice] = useState(!!navigator.maxTouchPoints ? 'mobile' : 'computer')
+    // const [orientation, setOrientation] = useState(!navigator.maxTouchPoints ? 'desktop' : !window.screen.orientation.angle ? 'portrait' : 'landscape')
     useEffect(() => {
-        window.scrollTo({ behavior: "smooth", top: true })
-    }, [])
+        window.scrollTo({ behavior: "smooth", top: true });
+
+        // window.detectListener = window.addEventListener("resize", detect);
+    }, []);
+
+    // const detect = () => {
+
+    //     setDevice(!!navigator.maxTouchPoints ? 'mobile' : 'computer')
+    //     setOrientation(!navigator.maxTouchPoints ? 'desktop' : !window.screen.orientation.angle ? 'portrait' : 'landscape');
+    // }
+
     return (
-        <div className="range-detail-view-container">
+
+        <div className="range-detail-view-container" >
             <div className="range-detail-view-flex">
                 <div className="range-detail-view-floorplan">
                     <div className="range-detail-view-floorplan-heading">
@@ -80,22 +95,21 @@ const RangeDetailView = ({ rangeData }) => {
                 </div>
 
             </div>
+
         </div>
     )
 
 }
 
 function RangeDetail({ location }) {
-    console.log(location.search.split("").pop());
     const [rangeId, setRangeId] = useState(location.search.split("").pop());
 
-
     return (
+
         <div className="range-detail-container">
             <div className="range-detail-page-heading"> {rangeData[rangeId - 1].title}</div>
             <RangeDetailView
                 rangeData={rangeData[rangeId - 1]} />
-
         </div>
     )
 }

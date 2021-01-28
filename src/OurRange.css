@@ -53,8 +53,10 @@
 
 }
 .range-outline {
-    display: grid;
-    grid-template-rows: 1fr 2fr 5fr 1.5fr;
+    /* display: grid;
+    grid-template-rows: 1fr 2fr 5fr 1.5fr; */
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
     /* background-color: blanchedalmond; */
     height: 90%;
@@ -64,7 +66,7 @@
 
 .range-price {
     display: flex;
-    height: 100%;
+    height: 10%;
     width: 90%;
     margin: 0 5%;
     align-items: center;
@@ -78,7 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 30vh;
     width: 90%;
     margin: 0 5%;
     /* background-color: blue; */
@@ -86,6 +88,7 @@
 
 .range-image-container img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -194,6 +197,9 @@
 .range-container {
     height: 120vh;
 }
+.range-image-container {
+    height: 36vh;
+}
 }
 /* @media screen and (max-height:900px) and (orientation:portrait) {
     .range {
@@ -226,6 +232,9 @@
 .range-container{ 
     /* background-color: blueviolet; */
     height: 120vw;
+}
+.range-image-container {
+    height: 36vw;
 }
 .range {
     height: 275vw;
