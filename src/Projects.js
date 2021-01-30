@@ -23,7 +23,7 @@ const project3Images = [
     "../assets/projects/project3/2.jpg"
 ]
 
-const Project = ({ heading = "heading", images, autoplay = true }) => {
+const Project = ({ heading = "heading", images, autoplay = false }) => {
     return (
         <div className="project-container">
             <div className="project-heading">{heading}</div>
@@ -43,8 +43,7 @@ function Projects() {
                 <div className="projects-container">
                     <Project
                         images={project1Images}
-                        heading="Afton Street"
-                        autoplay={false} />
+                        heading="Afton Street" />
                     <Project
                         images={project2Images}
                         heading="Bathroom & Kitchen" />
