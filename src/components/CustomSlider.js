@@ -17,25 +17,25 @@ export default class CustomSlider extends Component {
                 <Slider {...settings} >
 
                     <div className="slider-image">
-                        <img className="slider-image" src="../assets/images/pic1new.png" alt="pic1.png" />
+                        <img className="slider-image" src="../assets/home/pic1new.png" alt="pic1.png" />
                     </div>
                     <div className="slider-image">
-                        <img className="slider-image" src="../assets/images/pic2new.png" alt="pic2.png" />
+                        <img className="slider-image" src="../assets/home/pic2new.png" alt="pic2.png" />
                     </div>
                     <div className="slider-image">
-                        <img className="slider-image" src="../assets/images/pic6new.png" alt="pic6.png" />
+                        <img className="slider-image" src="../assets/home/pic6new.png" alt="pic6.png" />
                     </div>
                     <div className="slider-image">
-                        <img className="slider-image" src="../assets/images/bathroom.png" alt="bathroom.png" />
+                        <img className="slider-image" src="../assets/home/bathroom.png" alt="bathroom.png" />
                     </div>
                     <div className="slider-image">
-                        <img className="slider-image" src="../assets/images/kitchen.png" alt="kitchen.png" />
+                        <img className="slider-image" src="../assets/home/kitchen.png" alt="kitchen.png" />
                     </div>
                     <div className="slider-image">
-                        <img className="slider-image" src="../assets/images/living.png" alt="living.png" />
+                        <img className="slider-image" src="../assets/home/living.png" alt="living.png" />
                     </div>
                     <div className="slider-image">
-                        <img className="slider-image" src="../assets/images/bedroom.png" alt="bedroom.png" />
+                        <img className="slider-image" src="../assets/home/bedroom.png" alt="bedroom.png" />
                     </div>
                 </Slider>
 

@@ -51,7 +51,7 @@ section {
   width: 100%;
   height: 100vh; 
   scroll-snap-align: center;
-  background-image: url("./background.png");
+  /* background-image: url("./background.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,7 +67,7 @@ section {
   width: 100%;
   height: 100vh; 
   scroll-snap-align: center;
-  background-image: url("./homebackground.png");
+  background-image: url("./assets/home/homebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -83,7 +83,7 @@ section {
   width: 100%;
   height: 130vh; 
   scroll-snap-align: center;
-  background-image: url("./rangebackground.png");
+  background-image: url("./assets/range/rangebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -115,7 +115,7 @@ section {
   width: 100%;
   height: 150vh; 
   scroll-snap-align: center;
- background-image: url("./homebackground.png");
+  background-image: url("./assets/home/homebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,7 +137,7 @@ width: 100%;
   width: 100%;
   height: 115vh; 
   scroll-snap-align: center;
-  background-image: url("./aboutpagebackground.png");
+  background-image: url("./assets/about/aboutpagebackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -176,7 +176,7 @@ width: 100%;
   width: 100%;
   height: 50%; 
   scroll-snap-align: center;
-  background-image: url("./background.png");
+  /* background-image: url("./background.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

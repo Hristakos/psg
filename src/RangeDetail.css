@@ -2,7 +2,7 @@
     height: 210vh;
     width: 100vw;
     background-color: rgb(52,85,69);
-    background-image: url("./rangedetailbackground.png");
+    background-image: url("./assets/range/rangedetailbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

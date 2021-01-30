@@ -18,7 +18,7 @@ const Range = ({ title, price, image = "./tools.svg", detail, link, id }) => {
                 </ul></div>
                 <div className="range-link-container">
 
-                    <div className="range-link"><NavLink to={`${link}?id=${id}`} params={{ id: 1 }}><span className="range-link-text"><div>Tell me more</div> <img src="./rangearrow.svg" /></span></NavLink></div>
+                    <div className="range-link"><NavLink to={`${link}?id=${id}`} params={{ id: 1 }}><span className="range-link-text"><div>Tell me more</div> <img src="./assets/range/rangearrow.svg" /></span></NavLink></div>
                 </div>
 
             </div>
@@ -37,7 +37,7 @@ function OurRange() {
                     <Range
                         title="Bronze Model"
                         price="$99,000"
-                        image="./permits.png"
+                        image="./assets/features/permits.png"
                         detail={["1 bedroom / 1 bathroom", "Open kitchen and living", "9 ft ceilings", "All appliances Fitted to run off electricity grid and sewerage", "network or septic tank"]}
                         link="/RangeDetail"
                         id={1}
@@ -45,7 +45,7 @@ function OurRange() {
                     <Range
                         title="Silver Model"
                         price="$180,000"
-                        image="./noplaster.png"
+                        image="./assets/features/noplaster.png"
                         detail={["2 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "All appliances Fitted to run off electricity grid", "sewerage network or septic tank", "Verandah"]}
                         link="/RangeDetail"
                         id={2}
@@ -55,7 +55,7 @@ function OurRange() {
                     <Range
                         title="Change rooms"
                         price="$199,000"
-                        image="./footyroomstigers1.jpg"
+                        image="./assets/range/footyroomstigers1.jpg"
                         detail={["3 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"]}
                         link="/RangeDetail"
                         id={3}
@@ -63,7 +63,7 @@ function OurRange() {
                     <Range
                         title="Diamond Model"
                         price="$250,000"
-                        image="./design.png"
+                        image="./assets/features/design.png"
                         detail={["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"]}
                         link="/RangeDetail"
                         id={4}
