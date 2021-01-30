@@ -1,10 +1,60 @@
 import React from 'react';
+import ProjectSlider from './components/ProjectSlider';
 
+import "./Projects.css"
+const project1Images = [
+    "../assets/projects/project1/1.jpg",
+    "../assets/projects/project1/2.jpg",
+    "../assets/projects/project1/3.jpg",
+    "../assets/projects/project1/4.jpg",
+    "../assets/projects/project1/5.jpg",
+    "../assets/projects/project1/6.jpg"
+]
+const project2Images = [
+    "../assets/projects/project2/1.jpg",
+    "../assets/projects/project2/2.jpg",
+    "../assets/projects/project2/3.jpg",
+    "../assets/projects/project2/4.jpg",
+    "../assets/projects/project2/5.jpg",
+    "../assets/projects/project2/6.jpg"
+]
+const project3Images = [
+    "../assets/projects/project3/1.jpg",
+    "../assets/projects/project3/2.jpg"
+]
+
+const Project = ({ heading = "heading", images, autoplay = true }) => {
+    return (
+        <div className="project-container">
+            <div className="project-heading">{heading}</div>
+            <div className="project-images">
+                <ProjectSlider
+                    images={images}
+                    autoplay={autoplay} />
+            </div>
+        </div>
+    )
+}
 function Projects() {
     return (
-        <div>
-            <h1>Projects</h1>
-        </div>
+        <>
+            <div className="projects-heading">Projects</div>
+            <div className="projects-page-container">
+                <div className="projects-container">
+                    <Project
+                        images={project1Images}
+                        heading="Afton Street"
+                        autoplay={false} />
+                    <Project
+                        images={project2Images}
+                        heading="Bathroom & Kitchen" />
+                    <Project
+                        images={project3Images}
+                        heading="Bathroom" />
+                </div>
+
+            </div>
+        </>
     )
 }
 

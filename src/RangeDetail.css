@@ -1,7 +1,10 @@
 .range-detail-container {
-    height: 100vh;
+    height: 210vh;
     width: 100vw;
     background-color: rgb(52,85,69);
+    background-image: url("./rangedetailbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .range-detail-page-heading {
@@ -236,7 +239,7 @@ li{
 }
 
 
-@media screen and (max-width:900px)  and (orientation: landscape) {
+@media screen  and (orientation: landscape) {
 .range-detail-container {
     height: 200vw;
 }

@@ -1,0 +1,71 @@
+.projects-page-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(176 ,191, 184);
+}
+.projects-container {
+    display: grid;
+     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top:20vh;
+    width: 90%;
+    height: 80%;
+    gap: 5%;
+    margin: 0 5%;
+    /* background-color: white; */
+}
+
+.projects-heading {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    position: relative;
+    top: 15vh;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+.project-container {
+    width: 100%;
+    height:80%;
+    background-color: white;
+}
+
+.project-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(52,85,69);
+    height: 10vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-images {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    /* background-color: blueviolet; */
+}
+
+@media screen and (max-width: 1171px) and (orientation:portrait) { 
+
+    .projects {
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width: 695px) and (orientation:portrait) { 
+
+    .projects {
+        height: 250vh;
+    }
+}
