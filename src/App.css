@@ -81,7 +81,7 @@ section {
   /* justify-content: center; */
   text-align: center;
   width: 100%;
-  height: 130vh; 
+  height: 110vh; 
   scroll-snap-align: center;
   background-image: url("./assets/range/rangebackground.png");
   background-repeat: no-repeat;

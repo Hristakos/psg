@@ -11,8 +11,10 @@ export default class ProjectSlider extends Component {
             autoplay: this.props.autoplay,
             dots: true,
             dotsColor: "white",
-            duration: 200,
-            pauseOnHover: false
+            duration: 100,
+            pauseOnHover: false,
+            autoplaySpeed: 5000
+
         };
         return (
             <div className="project-slider">

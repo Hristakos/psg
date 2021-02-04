@@ -8,6 +8,8 @@
     top: 10vh;
 }
 .tag-line {
+    display: flex;
+    flex-direction: column;
     position: relative;
     display: flex;
     color: #345545;
@@ -23,12 +25,12 @@
 
 @media screen and (max-width: 750px) {
     .tag-line { 
-        font-size: 18px;
+        font-size: 14px;
     }   
 }
 
 @media screen and (max-width: 550px) {
     .tag-line { 
-        width: 70%;
+        width: 90%;
     }   
 }

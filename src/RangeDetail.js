@@ -8,32 +8,26 @@ const rangeData = [
         title: "Bronze Model",
         floorplan: "./assets/range/1bedfloorplan.jpg",
         floorplanMobile: "./assets/range/1bedroomfloorplanportrait.jpg",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus orci ac auctor augue mauris augue neque gravida in.Placerat vestibulum lectus mauris ultrices eros in.Auctor eu augue ut lectus arcu.Senectus et netus et malesuada.",
-        specifications: ["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
+        details: "Australian Owned and made using Australian materials & products. Highly efficient rated unit built with sandwedge panels to obtain a high energy star rating, unique engineered designed floor panel system. Mega anchor- QX - 100 Anchors subfloor stumping system. Low maintenance, easy to maintain and clean. Can be septic sewer fitted. Termite Rated. Bal rated bush fire areas. Cyclone rated. Quick easy construction with limited trades required.",
+        specifications: ["1 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
     },
     {
         id: 2,
-        title: "Silver Model",
+        title: "Silver Model only 2 to 3 bedroom",
         floorplan: "./assets/range/2bedfloorplan.jpg",
         floorplanMobile: "./assets/range/2bedroomfloorplanportrait.jpg",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus orci ac auctor augue mauris augue neque gravida in.Placerat vestibulum lectus mauris ultrices eros in.Auctor eu augue ut lectus arcu.Senectus et netus et malesuada.",
-        specifications: ["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
+        details: "Australian Owned and made using Australian materials & products. Highly efficient rated unit built with sandwedge panels to obtain a high energy star rating, unique engineered designed floor panel system. Mega anchor- QX - 100 Anchors subfloor stumping system. Low maintenance, easy to maintain and clean. Can be septic sewer fitted. Termite Rated. Bal rated bush fire areas. Cyclone rated. Quick easy construction with limited trades required.",
+        specifications: ["2-3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "Ceilings are 3600mm high", "All appliances Solar enabled", "Verandah"],
     },
     {
         id: 3,
-        title: "Change rooms",
+        title: "Sports rooms - customed faculties - community rooms",
         floorplan: "./assets/range/footyroomsfloorplan.jpg",
         floorplanMobile: "./assets/range/footyroomsfloorplan.jpg",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus orci ac auctor augue mauris augue neque gravida in.Placerat vestibulum lectus mauris ultrices eros in.Auctor eu augue ut lectus arcu.Senectus et netus et malesuada.",
-        specifications: ["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
+        details: "Open plan with large single spans up to 19m widths. Made to the clients requirements and expectations. Internal fit outs designed to suit the needs and requirements.",
+        specifications: ["Mega Anchor -QX-100 Anchors to sub floor", "Quick Construction", "High energy rated", "Termite proof", "Bal rated bush fire areas", "Cyclone rated"],
     },
-    {
-        id: 4,
-        title: "Diamond Model",
-        floorplan: "./assets/range/floorplan.svg",
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Tellus orci ac auctor augue mauris augue neque gravida in.Placerat vestibulum lectus mauris ultrices eros in.Auctor eu augue ut lectus arcu.Senectus et netus et malesuada.",
-        specifications: ["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
-    },
+
 
 
 ]

@@ -11,10 +11,7 @@ function Root() {
 
     return (
         <>
-            <nav>
 
-                <NavBar />
-            </nav>
             <div className="home" id="home">
                 <Home />
             </div>

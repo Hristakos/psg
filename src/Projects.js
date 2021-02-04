@@ -23,7 +23,7 @@ const project3Images = [
     "../assets/projects/project3/2.jpg"
 ]
 
-const Project = ({ heading = "heading", images, autoplay = false }) => {
+const Project = ({ heading = "heading", images, autoplay = true }) => {
     return (
         <div className="project-container">
             <div className="project-heading">{heading}</div>

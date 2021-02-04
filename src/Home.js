@@ -12,7 +12,7 @@ function Home() {
                 <CustomSlider />
 
             </div>
-            <div className="tag-line">See what we do differently...</div>
+            <div className="tag-line"><p>100% Aussie made and owned.</p><p>See what we do differently...</p></div>
         </div>
     )
 }

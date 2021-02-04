@@ -9,7 +9,7 @@ const Range = ({ title, price, image = "./tools.svg", detail, link, id }) => {
             <div className="range-title"> {title}</div>
             <div className="range-outline">
 
-                <div className="range-price">{price}</div>
+                <div className="range-price">FROM  {price}</div>
                 <div className="range-image-container">
                     <img src={image}></img>
                 </div>
@@ -36,39 +36,32 @@ function OurRange() {
                 <div className="range-wrapper">
                     <Range
                         title="Bronze Model"
-                        price="$99,000"
+                        price="$149,000"
                         image="./assets/features/permits.png"
                         detail={["1 bedroom / 1 bathroom", "Open kitchen and living", "9 ft ceilings", "All appliances Fitted to run off electricity grid and sewerage", "network or septic tank"]}
                         link="/RangeDetail"
                         id={1}
                     />
                     <Range
-                        title="Silver Model"
-                        price="$180,000"
+                        title="Silver Model only 2 to 3 bedroom"
+                        price="$249,000"
                         image="./assets/features/noplaster.png"
-                        detail={["2 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "All appliances Fitted to run off electricity grid", "sewerage network or septic tank", "Verandah"]}
+                        detail={["2-3 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "All appliances Fitted to run off electricity grid", "sewerage network or septic tank", "Verandah"]}
                         link="/RangeDetail"
                         id={2}
                     />
-                </div>
-                <div className="range-wrapper">
+
+
                     <Range
-                        title="Change rooms"
-                        price="$199,000"
+                        title="Sports rooms - customed faculties - community rooms"
+                        price="$249,000"
                         image="./assets/range/footyroomstigers1.jpg"
-                        detail={["3 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"]}
+                        detail={["Engineered to Australian Standards", "Large open plan", "Solar panelled and off the grid powered"]}
                         link="/RangeDetail"
                         id={3}
                     />
-                    <Range
-                        title="Diamond Model"
-                        price="$250,000"
-                        image="./assets/features/design.png"
-                        detail={["3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"]}
-                        link="/RangeDetail"
-                        id={4}
-                    />
                 </div>
+
             </div>
         </>
     )

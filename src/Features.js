@@ -45,7 +45,7 @@ function Features() {
                     image="./assets/features/hotcold.png" />
                 <Feature
                     heading="Solar capability"
-                    detail="Ability to be completely off-the-grid and self sufficient through solar power and environmentally rated water and sewage options. The roofing system also has significant and strengthened capacity for a substantial solar-panel areas – ideal for communities in remote areas of Australia."
+                    detail="Ability to be completely off-the-grid and self sufficient through solar power. The roofing system also has significant and strengthened capacity for a substantial solar-panel areas – ideal for communities in remote areas of Australia."
                     image="./assets/features/solar.png" />
                 <Feature
                     heading="Strong and durable"
