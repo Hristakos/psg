@@ -22,7 +22,15 @@
     top: -10vh;
 
 }
-
+@media screen and (max-width:900px) and (orientation: landscape) {
+    .tag-line {
+        height: 10vw;
+        top: -10vw;
+    }
+    .carousel-dots {
+    margin-top: 5vw !important;
+}
+}
 @media screen and (max-width: 750px) {
     .tag-line { 
         font-size: 14px;
@@ -31,6 +39,6 @@
 
 @media screen and (max-width: 550px) {
     .tag-line { 
-        width: 90%;
+        width: 85%;
     }   
 }
