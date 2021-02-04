@@ -44,7 +44,7 @@ function Difference() {
                 <div className="difference-outline-small">
 
                     <DifferenceSmall
-                        image="./assets/story/tools.svg"
+                        image="./assets/story/excavator.png"
                         heading="No concrete, digging or stumping"
                         detail="Our unique foundation system is comprised of a engineered insulated panel floor system which achieves a 7+ energy star rating and high BAL and cyclone ratings" />
                     <DifferenceSmall
