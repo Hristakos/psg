@@ -5,27 +5,27 @@ import "./RangeDetail.css"
 const rangeData = [
     {
         id: 1,
-        title: "Bronze Model",
+        title: <><p>Bronze Model</p><p>1 Bedroom</p></>,
         floorplan: "./assets/range/1bedfloorplan.jpg",
         floorplanMobile: "./assets/range/1bedroomfloorplanportrait.jpg",
-        details: "Australian Owned and made using Australian materials & products. Highly efficient rated unit built with sandwedge panels to obtain a high energy star rating, unique engineered designed floor panel system. Mega anchor- QX - 100 Anchors subfloor stumping system. Low maintenance, easy to maintain and clean. Can be septic sewer fitted. Termite Rated. Bal rated bush fire areas. Cyclone rated. Quick easy construction with limited trades required.",
-        specifications: ["1 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "9ft ceilings", "All appliances Solar enabled", "Verandah"],
+        details: "Australian owned and made using materials and products engineered for our unique climate. Our bronze model uses sandwedge panels and a unique engineer designed floor panel system to achieve high energy rating. The mega anchor QX-100 subfloor stumping systems means our home can be put anywhere without local govenement approval. Quick construction together with our superior design mean our bronze model is easy to build maintain and clean.",
+        specifications: ["1 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "All appliances Solar enabled", "Verandah", "Septic tank capability", "Termite rated", "BAL rated for bushfire areas", "Cyclone rated"],
     },
     {
         id: 2,
-        title: "Silver Model only 2 to 3 bedroom",
+        title: <><p>Silver Model</p><p>2-3 Bedroom</p></>,
         floorplan: "./assets/range/2bedfloorplan.jpg",
         floorplanMobile: "./assets/range/2bedroomfloorplanportrait.jpg",
-        details: "Australian Owned and made using Australian materials & products. Highly efficient rated unit built with sandwedge panels to obtain a high energy star rating, unique engineered designed floor panel system. Mega anchor- QX - 100 Anchors subfloor stumping system. Low maintenance, easy to maintain and clean. Can be septic sewer fitted. Termite Rated. Bal rated bush fire areas. Cyclone rated. Quick easy construction with limited trades required.",
-        specifications: ["2-3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "Ceilings are 3600mm high", "All appliances Solar enabled", "Verandah"],
+        details: "Australian owned and made using materials and products engineered for our unique climate. Our silver models offer an additional 1-2 bedrooms, providing extra room and space. Equipped with all the features of our Bronze model, our Silver model goes above and beyond with a larger floor plan and overall footprint.",
+        specifications: ["2-3 bedroom / 1 bathroom", "1 ensuite", "Open kitchen and living with pitched ceiling", "Ceilings are 3600mm high", "All appliances solar enabled", "Verandah", "Septic tank capability", "Termite rated", "BAL rated for bushfire areas", "Cyclone rated"],
     },
     {
         id: 3,
-        title: "Sports rooms - customed faculties - community rooms",
+        title: <><p>Custom Model</p><p>Sports / Community rooms</p></>,
         floorplan: "./assets/range/footyroomsfloorplan.jpg",
         floorplanMobile: "./assets/range/footyroomsfloorplan.jpg",
-        details: "Open plan with large single spans up to 19m widths. Made to the clients requirements and expectations. Internal fit outs designed to suit the needs and requirements.",
-        specifications: ["Mega Anchor -QX-100 Anchors to sub floor", "Quick Construction", "High energy rated", "Termite proof", "Bal rated bush fire areas", "Cyclone rated"],
+        details: "Our unique modular design means our homes can be customised to suit other facilities such as sports club rooms or community rooms. The open plan facilities can span up to 19 metres in width and accommodate a number of needs and requirements.",
+        specifications: ["Quick construction", "High energy rating", "Termite proof", "BAL rated for bushfire areas", "Cyclone rated"],
     },
 
 

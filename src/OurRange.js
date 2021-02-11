@@ -35,28 +35,28 @@ function OurRange() {
 
                 <div className="range-wrapper">
                     <Range
-                        title="Bronze Model"
+                        title={<><p>Bronze Model</p><p>1 Bedroom</p></>}
                         price="$149,000"
                         image="./assets/features/permits.png"
-                        detail={["1 bedroom / 1 bathroom", "Open kitchen and living", "9 ft ceilings", "All appliances Fitted to run off electricity grid and sewerage", "network or septic tank"]}
+                        detail={["1 bedroom / 1 bathroom", "Open kitchen and living with pitched ceiling", "All appliances fitted to run off electricity grid and sewerage or septic tank"]}
                         link="/RangeDetail"
                         id={1}
                     />
                     <Range
-                        title="Silver Model only 2 to 3 bedroom"
+                        title={<><p>Silver Model</p><p>2-3 Bedroom</p></>}
                         price="$249,000"
                         image="./assets/features/noplaster.png"
-                        detail={["2-3 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "All appliances Fitted to run off electricity grid", "sewerage network or septic tank", "Verandah"]}
+                        detail={["2-3 bedrooms / 1 bathroom", "Open kitchen and living with pitched ceiling", "All appliances fitted to run off electricity grid and sewerage or septic tank"]}
                         link="/RangeDetail"
                         id={2}
                     />
 
 
                     <Range
-                        title="Sports rooms - customed faculties - community rooms"
+                        title={<><p>Custom Model</p><p>Sports / Community rooms</p></>}
                         price="$249,000"
                         image="./assets/range/footyroomstigers1.jpg"
-                        detail={["Engineered to Australian Standards", "Large open plan", "Solar panelled and off the grid powered"]}
+                        detail={["Our homes can be customised to other facilities such as sports rooms and community rooms with toilet and shower amenities", "Engineered to Australian standards", "Large open plan", "Solar panelled and off-the-grid capabiltity"]}
                         link="/RangeDetail"
                         id={3}
                     />

@@ -33,19 +33,19 @@ function Features() {
                 />
                 <Feature
                     heading="No local government permits"
-                    detail="A new patented footing system called the QX -100 Anchor Assembly fixing system is a key feature and an alternative to the traditional concrete foundation or stumping system of the traditional home."
+                    detail="A new patented footing system called the QX -100 Anchor Assembly, is a key feature and an alternative to the traditional concrete foundation or stumping system of the traditional home. This means the modulive home can be built without traditional permits."
                     image="./assets/features/permits.png" />
                 <Feature
                     heading="No plaster, no problem"
-                    detail="Our unique wall panelling completely removes the need for plaster and paint. We use a pre-coated MDF board EOMRMDF to create a durable, modern and easy to clean alternative to plaster with no painting required"
+                    detail={<p>Our unique wall panelling completely removes the need for plaster and paint. We use a pre-coated MDF board <span style={{ color: "yellow" }}> EOMRMDF</span> to create a durable, modern and easy to clean alternative to plaster with no painting required </p>}
                     image="./assets/features/noplaster.png" />
                 <Feature
                     heading="Never too hot, never too cold"
-                    detail="Our customised Australian-made panels have a unique thermal sandwich composition which gives the building shell exceptional thermal qualities – exceeding a 7+-star Energy Rating in all Metropolitan and Regional Victorian areas. In warmer climates the unique insulation qualities achieves a higher rating."
+                    detail={<p>Our customised Australian-made panels have a unique thermal sandwich composition which gives the building shell exceptional thermal qualities – exceeding a 7+-star Energy Rating in all <span style={{ color: "yellow" }}>Metropolitan and Regional Victorian</span> areas. In warmer climates the unique insulation qualities achieves a higher rating.</p>}
                     image="./assets/features/hotcold.png" />
                 <Feature
                     heading="Solar capability"
-                    detail="Ability to be completely off-the-grid and self sufficient through solar power. The roofing system also has significant and strengthened capacity for a substantial solar-panel areas – ideal for communities in remote areas of Australia."
+                    detail="Our unique roofing systems has capacity for a substantial solar panel array with an ability to be completely off-the-grid ideal for communities in remote areas of Australia and overseas."
                     image="./assets/features/solar.png" />
                 <Feature
                     heading="Strong and durable"

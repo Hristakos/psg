@@ -2,9 +2,9 @@
     height: 210vh;
     width: 100vw;
     background-color: rgb(52,85,69);
-    background-image: url("./assets/range/rangedetailbackground.png");
+    /* background-image: url("./assets/range/rangedetailbackground.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .range-detail-page-heading {
@@ -15,9 +15,11 @@
   justify-content: center;
   color: white;
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 5vh;
+  flex-direction: column;
+  color: yellow;
 
 }
 

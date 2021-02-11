@@ -50,14 +50,13 @@ function Difference() {
                     <DifferenceSmall
                         image="./assets/story/maintenance.svg"
                         heading="Little to no maintenance"
-                        detail="Our customised wall and floor panels are engineered to Australian standards and specifications, which are fully insulated meaning plasterboards, paint, tiles, brick work or render finishes are not required" />
+                        detail="Our customised wall and floor panels are engineered to Australian standards and specifications, which are fully insulated meaning plasterboards, paint, tiles, brick work or render finishes aren't required" />
                 </div>
                 <div className="difference-outline-large">
                     <Differencelarge
                         image="./assets/story/time.svg"
                         heading="45-day build time"
-                        detail="Our modular home turns traditional building on its head with no studs, joists, bearers, digging or excavation required, the modular home can be built anywhere within 45-days with materials delivered direct to site. Our unique roof, wall and floor panels mean fast installation with no expensive trades needed for plastering, painters, tilers, brick layers, renders.
-         Mininimal number of trades personal required" />
+                        detail="Our modular home turns traditional building on its head with no studs, joists, bearers, digging or excavation required. Our unique roof, wall and floor panel mean fast installation with no expensive trades needed for plastering, painting, tiling, brick laying or rendering. These features combined mean our modular home can be built anywhere within 45-days with materials delivered direct to site." />
                 </div>
             </div>
         </>

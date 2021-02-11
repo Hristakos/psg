@@ -43,6 +43,7 @@
     width: 100%;
     height: 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 18px;
@@ -50,6 +51,8 @@
     text-transform: uppercase;
     color : white;
     font-weight: bold;
+    color: yellow;
+   
 
 }
 .range-outline {
@@ -95,14 +98,14 @@
 
 .range-detail {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 90%;
-    height: 100%;
+    height: 40vh;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
-    margin: 0 5%;
+    margin: 5% 5% 0 5%;
     text-align: left;
  
 }
@@ -163,7 +166,9 @@
     height: 60px;
     width: 100%;
     }
-
+    .range-container {
+        height: 90vh;
+    }
        .range {
         height: 240vh ;
     }
@@ -184,13 +189,16 @@
         height: 120vh;
     } */
 .range {
-    height: 440vh;
+    height: 350vh;
 }
 .range-container {
-    height: 120vh;
+    height: 100vh;
 }
 .range-image-container {
-    height: 36vh;
+    height: 30vh;
+}
+.range-detail {
+    height:50vh;
 }
 }
 /* @media screen and (max-height:900px) and (orientation:portrait) {
@@ -220,10 +228,10 @@
 } */
 
 
-@media screen  and (orientation: landscape) {
+/* @media screen  and (orientation: landscape) {
 
 .range-container{ 
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     height: 100vw;
 }
 .range-image-container {
@@ -232,22 +240,40 @@
 .range {
     height: 130vw;
 }
+} */
+@media screen and (max-width: 900px) and (orientation:landscape) {
+    .range-container {
+        height: 80vw;
+    }
+    .range-detail {
+        height: 30vw;
+    }
+    .range-image-container {
+        height: 25vw;
+    }
+    .range {
+        height: 100vw;
+    }
+    
 }
 @media screen and (max-width:834px)  and (orientation: landscape) {
 
 .range-container{ 
     /* background-color: blueviolet; */
-    height: 120vw;
+    height: 105vw;
 }
 .range-image-container {
-    height: 36vw;
+    height: 30vw;
 }
 .range {
     height: 275vw;
 }
+ .range-detail {
+     height: 40vw;
+ }
 }
 
-@media screen and (min-height: 1000px) and (min-width:1000px) and (orientation:portrait){
+/* @media screen and (min-height: 1000px) and (min-width:1000px) and (orientation:portrait){
     .range-container {
         height:70vh;
     }
@@ -271,7 +297,7 @@
 
     
 
-}
+} */
 
 
 

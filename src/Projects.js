@@ -38,18 +38,18 @@ const Project = ({ heading = "heading", images, autoplay = true }) => {
 function Projects() {
     return (
         <>
-            <div className="projects-heading">Projects</div>
+            <div className="projects-heading">Past projects</div>
             <div className="projects-page-container">
                 <div className="projects-container">
                     <Project
                         images={project1Images}
-                        heading="Afton Street" />
+                        heading="Residential redevelopment" />
                     <Project
                         images={project2Images}
-                        heading="Bathroom & Kitchen" />
+                        heading="Residential extension and renovation" />
                     <Project
                         images={project3Images}
-                        heading="Bathroom" />
+                        heading="Residential renovation" />
                 </div>
 
             </div>
