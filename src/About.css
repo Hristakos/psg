@@ -1,0 +1,87 @@
+.about-box {
+    display: flex;
+    position: relative;
+    top: 20vh;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin: 0% 10%;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.about-heading {
+    display: flex;
+    height: 20%;
+    width: 80%;
+    color:  rgb(52,85,69);
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 5%;
+    /* background-color: white; */
+}
+
+.about-content {
+    display: flex;
+    height: 50%;
+    width: 80%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Red Hat Display', sans-serif;
+    /* background-color: black; */
+}
+@media screen and (min-width: 1000px) {
+    .about-box {
+        max-width: 790px;
+    }
+}
+@media screen and (max-width: 660px) and (orientation: portrait) {
+    .about-section {
+        height: 90vh;
+    }
+    .our-story {
+        height: 480;
+    }
+
+    
+}
+
+@media screen and (max-width: 520px) and (orientation: portrait) {
+    .about-section {
+        height: 110vh;
+    }
+    .about-heading {
+        font-size: 24px;
+    }
+
+    .about-content {
+        font-size: 20px;
+    }
+        .our-story {
+        height: 790;
+    }
+
+}
+
+@media screen and (max-width: 320px) and (orientation: portrait) {
+
+        .about-heading {
+        font-size: 20px;
+    }
+
+    .about-content {
+        font-size: 16px;
+    }
+}
+
+
+
+

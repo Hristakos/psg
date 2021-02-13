@@ -6,7 +6,7 @@ import Contact from './Contact';
 import Home from './Home';
 import Difference from './Difference';
 import Features from './Features';
-
+import About from './About'
 function Root() {
 
     return (
@@ -16,6 +16,9 @@ function Root() {
                 <Home />
             </div>
             <div className="our-story" id="ourstory">
+                <div className="about-section">
+                    <About />
+                </div>
                 <div className="our-story-section">
                     <Difference />
                 </div>
