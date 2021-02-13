@@ -14,18 +14,18 @@
     display: flex;
     color: #345545;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #E5E5E5;
     height: 10vh;
-    width: 50%;
+    width: 90%;
     font-size: 24px;
-    top: -10vh;
+    top: -12vh;
 
 }
 @media screen and (max-width:900px) and (orientation: landscape) {
     .tag-line {
         height: 10vw;
-        top: -10vw;
+        /* top: -15vw; */
     }
     .carousel-dots {
     margin-top: 5vw !important;
@@ -37,8 +37,8 @@
     }   
 }
 
-@media screen and (max-width: 550px) {
+/* @media screen and (max-width: 550px) {
     .tag-line { 
         width: 85%;
     }   
-}
+} */
