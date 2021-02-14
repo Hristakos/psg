@@ -14,21 +14,21 @@
     display: flex;
     color: #345545;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #E5E5E5;
     height: 10vh;
     width: 90%;
     font-size: 24px;
-    top: -12vh;
+    top: -10vh;
 
 }
 @media screen and (max-width:900px) and (orientation: landscape) {
     .tag-line {
-        height: 10vw;
-        /* top: -15vw; */
+        height: 7.5vw;
+        top: -7.5vw;
     }
     .carousel-dots {
-    margin-top: 5vw !important;
+    margin-top: 3vw !important;
 }
 }
 @media screen and (max-width: 750px) {
@@ -37,8 +37,3 @@
     }   
 }
 
-/* @media screen and (max-width: 550px) {
-    .tag-line { 
-        width: 85%;
-    }   
-} */

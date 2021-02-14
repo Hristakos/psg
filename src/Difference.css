@@ -5,7 +5,7 @@
     position: relative;
     width: 90%;
     height: 90vh;
-    top: 15vh;
+    top: 5vh;
     gap: 2vh;
     /* background-color: blueviolet; */
     
@@ -36,7 +36,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  gap: 10vh;
+  gap: 5vh;
 }
 
 .half-screen-top {
@@ -120,19 +120,7 @@
     /* background-color: brown;  */
 
 }
-.difference-page-heading{
-  display: flex;
-  position: relative;
-  top: 16vh;
-  align-items: center;
-  justify-content: center;
-  color: white;
-   font-family: 'Red Hat Display', sans-serif;
-  /* background-color: black; */
-  /* height: 100%; */
-  font-size: 36px;
-  font-weight: bold;
-}
+
 .difference-heading p {
     display: flex;
     width: 100%;
@@ -161,33 +149,66 @@
   .difference-outline-large {
     height: 50vh;
 }
+.difference-container-large {
+    height: 100%;
+    justify-content: flex-start;
+    padding-top: 5%;
+    /* height: 40vh; */
+    /* gap: 4vh; */
+    /* background-color: yellow; */
+   
+}
+.difference-detail {
+    padding-top: 25px;
+}
 }
 
 
-@media screen and (max-width: 550px)and (orientation: portrait)  {
-    .difference-wrapper {
+@media screen and (max-width: 660px)and (orientation: portrait)  {
+    /* .difference-wrapper {
         height: 250vh;
-    }
+    } */
 
     .difference-outline-small {
-         height: 160vh;
+         height: 100vh;
     
     }
+
 
     .difference-outline-large, .difference-outline-small {
          grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
          /* height: 100%; */
     }
     .difference-outline-large {
-        height: 105vh;
+        height: 65vh;
+    }
+
+  
+}
+
+@media screen and (max-width: 520px)and (orientation: portrait)  {
+
+
+    .difference-outline-small {
+         height: 110vh;
+    
+    }
+
+
+    .difference-outline-large {
+        height: 90vh;
     }
 
   
 }
 
 @media screen and (max-width: 360px) and (orientation: portrait)  {
-    .difference-detail {
-        /* font-size: 11.5px; */
+    .difference-outline-small {
+        height: 155vh;
+    }
+
+    .difference-outline-large {
+        height: 105vh;
     }
 }
 
@@ -200,6 +221,16 @@
     .difference-wrapper {
         height: 160vw;
     }
+
+    .difference-container-large {
+    height: 90%;
+    justify-content: flex-start;
+    padding-top: 5%;
+    /* height: 40vh; */
+    gap: 20px;
+    /* background-color: yellow; */
+   
+}
 }
 
 @media screen and (max-width:600px)  and (orientation: landscape) {

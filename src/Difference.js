@@ -38,7 +38,7 @@ const Differencelarge = ({ image, heading, detail }) => {
 function Difference() {
     return (
         <>
-            <div className="difference-page-heading">So, what makes us different? </div>
+
             <div className="difference-wrapper">
 
                 <div className="difference-outline-small">

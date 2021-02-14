@@ -27,14 +27,14 @@
 
 }
 .carousel-dots li button:before {
-    color:  #345545;;
+    color:  rgb(176 ,191, 184);
 }
 .carousel-dots li.carousel-dots-active button:before {
-color: #345545;;
+color:  rgb(176 ,191, 184);
 }
 
 .carousel-dots {
-    margin-top: 5vh;
+    margin-top: 5.5vh;
 }
 @media screen and (max-width: 800px) {
     .slider {

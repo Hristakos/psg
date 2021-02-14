@@ -17,6 +17,7 @@
   /* height: 100%; */
   font-size: 36px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 .range-wrapper {
 
@@ -26,7 +27,7 @@
     height: 100%;
     width: 100%;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0;
+    gap: 2%;
      
 }
 
@@ -35,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 80vh;
+    height: 90vh;
     
     /* width: 20vw; */
 }
@@ -45,13 +46,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 18px;
     font-family: 'Red Hat Display', sans-serif;
     text-transform: uppercase;
     color : white;
     font-weight: bold;
     color: yellow;
+    margin: 10px 0;
    
 
 }
@@ -170,7 +172,7 @@
         height: 90vh;
     }
        .range {
-        height: 240vh ;
+        height: 245vh ;
     }
 }
 
@@ -189,7 +191,7 @@
         height: 120vh;
     } */
 .range {
-    height: 350vh;
+    height: 355vh;
 }
 .range-container {
     height: 100vh;
@@ -260,7 +262,7 @@
 
 .range-container{ 
     /* background-color: blueviolet; */
-    height: 105vw;
+    height: 110vw;
 }
 .range-image-container {
     height: 30vw;
@@ -269,7 +271,7 @@
     height: 275vw;
 }
  .range-detail {
-     height: 40vw;
+     height: 45vw;
  }
 }
 

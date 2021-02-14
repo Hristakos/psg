@@ -9,7 +9,7 @@ const Range = ({ title, price, image = "./tools.svg", detail, link, id }) => {
             <div className="range-title"> {title}</div>
             <div className="range-outline">
 
-                <div className="range-price">FROM  {price}</div>
+                <div className="range-price">From  {price}</div>
                 <div className="range-image-container">
                     <img src={image}></img>
                 </div>
