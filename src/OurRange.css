@@ -100,7 +100,7 @@
 
 .range-detail {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     width: 90%;
     height: 40vh;
