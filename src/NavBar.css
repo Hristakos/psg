@@ -160,7 +160,7 @@
 
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width:900px) and (orientation: landscape) {
 
     .logo {
         object-fit: cover;
